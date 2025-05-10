@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}SipSavour - 品味生活，享受美食{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero position-relative" style="background-image: url('{% static 'images/hero-bg.jpg' %}'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 90vh;">
+    <div class="position-absolute w-100 h-100" style="background: rgba(0, 0, 0, 0.1);"></div>
+    <div class="container h-100 position-relative">
+        <div class="row h-100 align-items-center justify-content-center">
+            <div class="col-12 text-center text-white">
+                <h1 class="display-3 fw-bold mb-4" style="text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);">Sip &amp; Savour Co.</h1>
+                <p class="lead fs-4" style="font-style: italic; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);">Every sip, every bite, pure enjoyment.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Items -->
+<section class="py-5">
+    <div class="container">
+        <h3 class="text-center mb-5">精選推薦</h3>
+        <div class="row g-4 justify-content-center">
+            {% for product in featured_products %}
+            <div class="col-md-4">
+                <div class="card h-100">
+                    {% if product.image %}
+                        <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
+                    {% else %}
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="{{ product.name }}">
+                    {% endif %}
+                    {% if product.is_new %}
+                    <div class="position-absolute top-0 end-0 m-2">
+                        <span class="badge bg-danger">NEW</span>
+                    </div>
+                    {% endif %}
+                    <div class="card-body text-center">
+                        <h5 class="card-title">{{ product.name }}</h5>
+                        <p class="card-text">{{ product.description|truncatechars:50 }}</p>
+                        <p class="text-primary fw-bold">$ {{ product.price }}</p>
+                        <a href="{% url 'products:product_detail' product.pk %}" class="btn btn-outline-primary">查看詳情</a>
+                    </div>
+                </div>
+            </div>
+            {% empty %}
+            <div class="col-12">
+                <p class="text-center">暫無精選商品</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="py-5">
+    <div class="container">
+        <h3 class="text-center mb-5">聯絡我們</h3>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <p class="mb-4">歡迎隨時與我們聯繫，我們期待為您提供最優質的服務。</p>
+                <div class="d-flex justify-content-center gap-4 mb-4">
+                    <div>
+                        <i class="fas fa-phone-alt mb-2"></i>
+                        <p class="mb-0">02-1234-5678</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-envelope mb-2"></i>
+                        <p class="mb-0">contact@sipsavour.com</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-map-marker-alt mb-2"></i>
+                        <p class="mb-0">106320台北市大安區和平東路二段134 號</p>
+                    </div>
+                </div>
+                <a href="/contact" class="btn btn-outline-primary mt-3">更多聯絡資訊</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

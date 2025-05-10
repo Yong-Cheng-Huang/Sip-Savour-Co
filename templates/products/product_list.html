@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-4">
+    <h3 class="mb-4">產品列表</h3>
+    
+    <!-- 分類篩選 -->
+    <div class="mb-4">
+        <form method="get" class="form-inline">
+            <select name="category" class="form-control mr-2" onchange="this.form.submit()">
+                <option value="">所有分類</option>
+                {% for category in categories %}
+                    <option value="{{ category.id }}" {% if selected_category == category.id|stringformat:"i" %}selected{% endif %}>
+                        {{ category.name }}
+                    </option>
+                {% endfor %}
+            </select>
+        </form>
+    </div>
+
+    <!-- 產品列表 -->
+    <div class="row">
+        {% for product in products %}
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    {% if product.image %}
+                        <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
+                    {% endif %}
+                    {% if product.is_new %}
+                    <div class="position-absolute top-0 end-0 m-2">
+                        <span class="badge bg-danger">NEW</span>
+                    </div>
+                    {% endif %}
+                    <div class="card-body">
+                        <h5 class="card-title">{{ product.name }}</h5>
+                        <p class="card-text">$ {{ product.price }}</p>
+                        <a href="{% url 'products:product_detail' product.pk %}" class="btn btn-outline-primary mt-3">查看詳情</a>
+                    </div>
+                </div>
+            </div>
+        {% empty %}
+            <div class="col-12">
+                <p>沒有找到產品。</p>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

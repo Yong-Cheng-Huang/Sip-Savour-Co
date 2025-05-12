@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
+{% if user.is_authenticated %}
 <div class="container mt-4">
     <h3 class="mb-4">產品列表</h3>
     
@@ -45,4 +46,10 @@
         {% endfor %}
     </div>
 </div>
+{% else %}
+<div class="container mt-4">
+    <h3 class="mb-4">產品列表</h3>
+    <p>請先登入才能查看產品列表。</p>
+    <a href="{% url 'login' %}" class="btn btn-primary">登入</a>
+{% endif %}
 {% endblock %}

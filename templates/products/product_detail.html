@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
+{% if user.is_authenticated %}
 <!-- Header Section -->
 <div class="py-4 mb-5">
     <div class="container">
@@ -50,4 +51,10 @@
         </div>
     </div>
 </div>
+{% else %}
+<div class="container mt-4">
+    <h3 class="mb-4">產品詳情</h3>
+    <p>請先登入才能查看產品詳情。</p>
+    <a href="{% url 'login' %}" class="btn btn-primary">登入</a>
+{% endif %}
 {% endblock %} 

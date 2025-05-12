@@ -3,8 +3,6 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login as auth_login, logout as auth_logout
 
 # Create your views here.
-
-
 def register(request):
     message = ""
     if request.method == "POST":

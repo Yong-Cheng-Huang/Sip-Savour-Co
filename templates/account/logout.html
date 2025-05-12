@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}登出 - SipSavour{% endblock %}
+{% block content %}
+<div class="container my-5" style="max-width: 600px;">
+  <h2 class="text-center mb-4">登出成功</h2>
+  {% if message %}
+    <div class="alert alert-warning text-center">
+      {{ message }}
+    </div>
+  {% endif %}
+  <div class="text-center mt-4">
+    <a href="/login/" class="btn btn-primary">重新登入</a>
+    <a href="/" class="btn btn-outline-secondary ms-2">返回首頁</a>
+  </div>
+</div>
+{% endblock %}
+

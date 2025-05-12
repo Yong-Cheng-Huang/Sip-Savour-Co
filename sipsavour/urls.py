@@ -21,13 +21,18 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.views.generic import TemplateView
 from django.conf.urls import include
-from products import views
+from products import views as product_views
+from account import views as account_views
+
 
 urlpatterns = [
     # path("", TemplateView.as_view(template_name="home.html"), name="home"),
-    path("", views.home, name="home"),
+    path("", product_views.home, name="home"),
     path("admin/", admin.site.urls),
     path("products/", include("products.urls")),
+    path("register/", account_views.register, name="register"),
+    path("login/", account_views.login, name="login"),
+    path("logout/", account_views.logout, name="logout"),
 ]
 
 # 處理媒體檔案

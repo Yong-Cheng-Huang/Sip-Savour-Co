@@ -8,7 +8,7 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb mb-0">
                 <li class="breadcrumb-item"><a href="{% url 'products:product_list' %}" class="text-decoration-none">商品列表</a></li>
-                <li class="breadcrumb-item"><a href="#" class="text-decoration-none">{{ product.category.name }}</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'products:product_list' %}?category={{ product.category.id }}" class="text-decoration-none">{{ product.category.name }}</a></li>
                 <li class="breadcrumb-item active" aria-current="page">{{ product.name }}</li>
             </ol>
         </nav>
@@ -43,7 +43,7 @@
                     <p class="text-muted">{{ product.description|linebreaks }}</p>
                 </div>
                 <div class="d-flex gap-3">
-                    <a href="{% url 'products:product_list' %}" class="btn btn-outline-secondary">
+                    <a href="{% url 'products:product_list' %}?category={{ product.category.id }}" class="btn btn-outline-secondary">
                         <i class="fas fa-arrow-left me-2"></i>返回列表
                     </a>
                 </div>

@@ -28,6 +28,7 @@ class Product(models.Model):
     image = models.ImageField(upload_to='products/',
                               verbose_name='商品圖片', null=True, blank=True)
     description = models.TextField(blank=True, verbose_name='商品描述')
+    ingredients = models.TextField(blank=True, verbose_name='商品成分')
     is_featured = models.BooleanField(default=False, verbose_name='精選商品')
     is_new = models.BooleanField(default=False, verbose_name='新上市商品')
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='建立時間')

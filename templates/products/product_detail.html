@@ -17,35 +17,45 @@
 
 <!-- Product Detail Section -->
 <div class="container mb-5">
-    <div class="row">
-        <!-- Product Image -->
-        <div class="col-md-6 mb-4">
-            {% if product.image %}
-                <div class="card border-0 shadow-sm h-100">
-                    <img src="{{ product.image.url }}" class="img-fluid rounded" alt="{{ product.name }}" style="height: 350px; object-fit: cover;">
-                </div>
-            {% endif %}
-        </div>
-        
-        <!-- Product Info -->
-        <div class="col-md-6 mb-4">
-            <div class="card border-0 shadow-sm p-4 h-100">
-                <h2 class="mb-3">{{ product.name }}</h2>
-                <div class="d-flex align-items-center mb-3">
-                    <span class="badge bg-secondary me-2">{{ product.category.name }}</span>
-                    {% if product.is_new %}
-                    <span class="badge bg-danger">NEW</span>
-                    {% endif %}
-                </div>
-                <p class="h3 text-primary mb-4">$ {{ product.price }}</p>
-                <div class="mb-4">
-                    <h5 class="mb-3">商品描述</h5>
-                    <p class="text-muted">{{ product.description|linebreaks }}</p>
-                </div>
-                <div class="d-flex gap-3">
-                    <a href="{% url 'products:product_list' %}?category={{ product.category.id }}" class="btn btn-outline-secondary">
-                        <i class="fas fa-arrow-left me-2"></i>返回列表
-                    </a>
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="card border-0 shadow-sm">
+                <div class="row g-0 align-items-center">
+                    <!-- Product Info -->
+                    <div class="col-md-6">
+                        <div class="card-body p-4">
+                            <h2 class="mb-3">{{ product.name }}</h2>
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="badge bg-secondary me-2">{{ product.category.name }}</span>
+                                {% if product.is_new %}
+                                <span class="badge bg-danger">NEW</span>
+                                {% endif %}
+                            </div>
+                            <p class="h3 text-primary mb-4">$ {{ product.price }}</p>
+                            <div class="mb-4">
+                                <h5 class="mb-3">商品描述</h5>
+                                <p class="text-muted">{{ product.description|linebreaks }}</p>
+                            </div>
+                            <div class="mb-4">
+                                <h5 class="mb-3">商品成分</h5>
+                                <p class="text-muted">{{ product.ingredients|linebreaks }}</p>
+                            </div>
+                            <div class="d-flex gap-3">
+                                <a href="{% url 'products:product_list' %}?category={{ product.category.id }}" class="btn btn-outline-secondary">
+                                    <i class="fas fa-arrow-left me-2"></i>返回列表
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Image -->
+                    <div class="col-md-6 p-4">
+                        {% if product.image %}
+                            <div class="d-flex justify-content-center">
+                                <img src="{{ product.image.url }}" class="img-fluid rounded" alt="{{ product.name }}" style="height: 300px; object-fit: cover; width: auto; max-width: 100%;">
+                            </div>
+                        {% endif %}
+                    </div>
                 </div>
             </div>
         </div>

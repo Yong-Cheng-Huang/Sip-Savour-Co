@@ -19,7 +19,7 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
-from django.views.generic import TemplateView
+# from django.views.generic import TemplateView
 from django.conf.urls import include
 from products import views as product_views
 from account import views as account_views
@@ -34,7 +34,7 @@ urlpatterns = [
     path("login/", account_views.login, name="login"),
     path("logout/", account_views.logout, name="logout"),
     path("contact/", include("contact.urls")),
-    
+    path("about/", include("about.urls")),
 ]
 
 # 處理媒體檔案

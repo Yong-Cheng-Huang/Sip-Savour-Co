@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}聯絡我們 - SipSavour{% endblock %}
+
+{% block content %}
+<div class="container py-5 contact-page">
+  <h3 class="mb-5">聯絡我們</h3>
+  <div class="row g-4">
+    <!-- 聯絡表單 -->
+    <div class="col-lg-6">
+      <div class="card shadow-sm">
+        <div class="card-body p-4">
+          <h3 class="card-title mb-4">發送訊息</h3>
+          
+          <form method="POST" action="{% url 'contact:contact' %}">
+            {% csrf_token %}
+            <div class="mb-3">
+              <label for="name" class="form-label">姓名</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">電子郵件</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">電話</label>
+              <input type="tel" class="form-control" id="phone" name="phone">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">訊息內容</label>
+              <textarea class="form-control" id="message" name="message" rows="1" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">發送訊息</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- 聯絡資訊 -->
+    <div class="col-lg-6">
+      <div class="row g-4">
+        <!-- 地址 -->
+        <div class="col-md-6">
+          <div class="card h-100 contact-info-card">
+            <div class="card-body text-center p-4">
+              <i class="fas fa-map-marker-alt fa-2x mb-3"></i>
+              <h5 class="card-title">地址</h5>
+              <p class="card-text">台北市大安區和平東路二段134號</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 電話 -->
+        <div class="col-md-6">
+          <div class="card h-100 contact-info-card">
+            <div class="card-body text-center p-4">
+              <i class="fas fa-phone fa-2x mb-3"></i>
+              <h5 class="card-title">電話</h5>
+              <p class="card-text">02-1234-5678</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 電子郵件 -->
+        <div class="col-md-6">
+          <div class="card h-100 contact-info-card">
+            <div class="card-body text-center p-4">
+              <i class="fas fa-envelope fa-2x mb-3"></i>
+              <h5 class="card-title">電子郵件</h5>
+              <p class="card-text">contact@sipsavour.com</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 營業時間 -->
+        <div class="col-md-6">
+          <div class="card h-100 contact-info-card">
+            <div class="card-body text-center p-4">
+              <i class="fas fa-clock fa-2x mb-3"></i>
+              <h5 class="card-title">營業時間</h5>
+              <p class="card-text mb-1">週一至週五: 10:00 - 18:00</p>
+              <p class="card-text">週六至週日: 休息</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Google Maps -->
+  <div class="row mt-5">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body p-0">
+          <div class="map-container">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.2771475954423!2d121.54219871186021!3d25.024666977729932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a908a8232611%3A0xeebfb2d71a5025c7!2sNational%20Taipei%20University%20of%20Education!5e0!3m2!1sen!2stw!4v1748396476306!5m2!1sen!2stw"
+              width="100%" 
+              height="450" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

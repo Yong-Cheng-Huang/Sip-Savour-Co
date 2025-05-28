@@ -33,6 +33,8 @@ urlpatterns = [
     path("register/", account_views.register, name="register"),
     path("login/", account_views.login, name="login"),
     path("logout/", account_views.logout, name="logout"),
+    path("contact/", include("contact.urls")),
+    
 ]
 
 # 處理媒體檔案

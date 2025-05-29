@@ -14,6 +14,20 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <!-- Custom CSS -->
   <link href="{% static 'css/style.css' %}" rel="stylesheet">
+  <style>
+    .logo-transparent {
+      mix-blend-mode: multiply;
+      filter: brightness(1.1);
+    }
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .navbar-brand img {
+      margin: 0;
+    }
+  </style>
 
   {% block extra_css %}{% endblock %}
 </head>
@@ -22,7 +36,10 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/">Sip &amp; Savour Co.</a>
+      <a class="navbar-brand" href="/">
+        <img src="{% static 'images/logo.png' %}" alt="SipSavour Logo" height="40" class="logo-transparent">
+        <span>Sip &amp; Savour Co.</span>
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>

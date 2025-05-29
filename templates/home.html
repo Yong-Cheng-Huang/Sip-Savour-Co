@@ -36,7 +36,7 @@
                     {% endif %}
                     <div class="card-body text-center">
                         <h5 class="card-title">{{ product.name }}</h5>
-                        <p class="card-text">{{ product.description|truncatechars:50 }}</p>
+                        <p class="card-text">{{ product.description|truncatechars:45 }}</p>
                         <p class="text-primary fw-bold">$ {{ product.price }}</p>
                         {% if user.is_authenticated %}
                         <a href="{% url 'products:product_detail' product.pk %}" class="btn btn-outline-primary">查看詳情</a>

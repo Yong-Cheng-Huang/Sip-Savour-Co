@@ -4,6 +4,7 @@
 {% block title %}關於我們 - SipSavour{% endblock %}
 
 {% block content %}
+{% if user.is_authenticated %}
 <div class="container-fluid p-0 about-page">
   <!-- 品牌故事 -->
   <div class="brand-story-section position-relative text-white">
@@ -117,4 +118,16 @@
     </div>
   </div>
 </div>
+{% else %}
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8 text-center">
+      <h3 class="mb-4">關於我們</h3>
+      <p class="lead mb-4">您需要登入才能查看關於我們的內容。</p>
+      <a href="{% url 'login' %}" class="btn btn-primary">登入</a>
+    </div>
+  </div>
+</div>
+
+{% endif %}
 {% endblock %}

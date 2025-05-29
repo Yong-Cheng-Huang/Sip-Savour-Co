@@ -7,10 +7,10 @@
 <div class="container-fluid p-0 about-page">
   <!-- 品牌故事 -->
   <div class="brand-story-section position-relative text-white">
-    <img src="{% static 'images/about/store.jpg' %}" alt="SipSavour 店面" class="img-fluid w-100" style="height: 500px; object-fit: cover;">
+    <img src="{% static 'images/about/store.jpg' %}" alt="SipSavour 店面" class="img-fluid w-100" style="height: 500px; object-fit: cover; opacity: 0.8;">
     
     <div class="brand-story-content position-absolute top-50 start-50 translate-middle text-center px-3" style="background-color: rgba(0, 0, 0, 0.4); border-radius: 1rem;">
-      <h3 class="mb-4">品牌故事</h3>
+      <h3 class="mb-4 py-3">品牌故事</h3>
       <p class="mb-4 fs-5">SipSavour 誕生於對茶飲文化的熱愛與堅持。我們相信，每一杯茶都應該是一段美好的體驗。</p>
       <p class="mb-4 fs-6">從2018年創立至今，我們始終堅持選用最優質的茶葉，結合現代創新技術，為顧客帶來獨特的茶飲體驗。每一杯飲品都承載著我們對品質的追求和對顧客的承諾。</p>
     </div>
@@ -20,7 +20,7 @@
   <!-- 我們的理念 -->
   <div class="container py-5">
     <div class="row mb-5">
-      <div class="col-12 text-center mb-4">
+      <div class="col-12 text-center mb-5">
         <h3>我們的理念</h3>
       </div>
       <div class="col-md-4">
@@ -47,56 +47,56 @@
     </div>
 
     <!-- 我們的特色 -->
-    <div class="row mb-5">
-      <div class="col-12 text-center mb-4">
+    <div class="row mb-5 py-5">
+      <div class="col-12 text-center mb-5">
         <h3>我們的特色</h3>
       </div>
-      <div class="col-md-6 mb-4">
+      <div class="col-md-6 mb-5">
         <div class="feature-item">
           <div class="row g-0">
-            <div class="col-4">
-              <img src="{% static 'images/about/tea.jpg' %}" alt="嚴選茶葉" class="img-fluid rounded">
+            <div class="col-5">
+              <img src="{% static 'images/about/tea.jpg' %}" alt="嚴選茶葉" class="img-fluid rounded" style="height: 200px; object-fit: cover;">
             </div>
-            <div class="col-8 ps-3">
+            <div class="col-7 ps-3">
               <h5>嚴選茶葉</h5>
               <p>精選台灣高山茶葉，確保每一杯都香醇回甘。</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-md-6 mb-4">
+      <div class="col-md-6 mb-5">
         <div class="feature-item">
           <div class="row g-0">
-            <div class="col-4">
-              <img src="{% static 'images/about/ingredients.jpg' %}" alt="天然原料" class="img-fluid rounded">
+            <div class="col-5">
+              <img src="{% static 'images/about/ingredients.jpg' %}" alt="天然原料" class="img-fluid rounded" style="height: 200px; object-fit: cover;">
             </div>
-            <div class="col-8 ps-3">
+            <div class="col-7 ps-3">
               <h5>天然原料</h5>
               <p>使用天然食材，無添加人工香料與色素。</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-md-6 mb-4">
+      <div class="col-md-6 mb-5">
         <div class="feature-item">
           <div class="row g-0">
-            <div class="col-4">
-              <img src="{% static 'images/about/process.jpg' %}" alt="專業製程" class="img-fluid rounded">
+            <div class="col-5">
+              <img src="{% static 'images/about/process.jpg' %}" alt="專業製程" class="img-fluid rounded" style="height: 200px; object-fit: cover;">
             </div>
-            <div class="col-8 ps-3">
+            <div class="col-7 ps-3">
               <h5>專業製程</h5>
               <p>採用標準化製程，確保品質穩定。</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-md-6 mb-4">
+      <div class="col-md-6 mb-5">
         <div class="feature-item">
           <div class="row g-0">
-            <div class="col-4">
-              <img src="{% static 'images/about/service.jpg' %}" alt="貼心服務" class="img-fluid rounded">
+            <div class="col-5">
+              <img src="{% static 'images/about/service.jpg' %}" alt="貼心服務" class="img-fluid rounded" style="height: 200px; object-fit: cover;">
             </div>
-            <div class="col-8 ps-3">
+            <div class="col-7 ps-3">
               <h5>貼心服務</h5>
               <p>提供客製化服務，滿足每位顧客的需求。</p>
             </div>
@@ -111,7 +111,7 @@
         <div class="join-us-section">
           <h3 class="mb-4">加入我們</h3>
           <p class="lead mb-4">我們正在尋找熱愛茶飲文化的夥伴，一起創造美好的茶飲體驗。</p>
-          <a href="{% url 'contact:contact' %}" class="btn btn-primary">聯絡我們</a>
+          <a href="{% url 'contact:contact' %}" class="btn btn-outline-primary">聯絡我們</a>
         </div>
       </div>
     </div>

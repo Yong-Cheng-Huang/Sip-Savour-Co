@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container my-5">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">最新消息</li>
+      </ol>
+    </nav>
+
+    <article class="news-article">
+        <p class="text-muted">{{ publish_date|date:"F jS, Y" }}</p>
+        <h2 class="mb-4">{{ title }}</h2>
+
+        <img src="{% static 'images/news.jpg' %}" alt="新品上市" class="img-fluid mb-4">
+
+        <div class="news-content">
+            <p><strong>全新「元氣鬆餅堡」系列正式登場！</strong></p>
+            <p>鬆餅香甜酥的麵餅，包裹著滑方蛋與起司，搭配上濃郁鬆餅，層層堆疊出濃濃幸福感。</p>
+
+            <h5>新品品項：</h5>
+            <ul>
+                <li>寶寶蛋鬆餅堡 $65</li>
+                <li>培根蛋鬆餅堡 $70</li>
+                <li>豬肉蛋鬆餅堡 $80</li>
+            </ul>
+
+            <h5>超值早餐組合 <span class="text-warning">11:00 AM 前限定</span></h5>
+            <ul>
+                <li>火腿蛋鬆餅堡</li>
+                <li>+ 熱美式 $70</li>
+                <li>+ 冰美式 $90</li>
+                <li>+ 熱奶茶 $95</li>
+                <li>+ 冰奶茶 $105</li>
+            </ul>
+
+            <p>5/16(五)當天，全台門市，憑卡打卡，<strong>你打卡我請鬆餅，數量有限贈完為止！</strong></p>
+            <p>早來不寂寞，一口咬定的是美好元氣 ❤️</p>
+        </div>
+    </article>
+</div>
+{% endblock %}

@@ -35,6 +35,7 @@ urlpatterns = [
     path("logout/", account_views.logout, name="logout"),
     path("contact/", include("contact.urls")),
     path("about/", include("about.urls")),
+    path("news/", include("news.urls")),
 ]
 
 # 處理媒體檔案

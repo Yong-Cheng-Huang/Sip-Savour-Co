@@ -37,6 +37,8 @@ urlpatterns = [
     path("news/", include("news.urls")),
     path("cart/", include("cart.urls")),
     path("orders/", include("orders.urls")),
+    path('loyalty/', include('loyalty.urls')),
+
 ]
 
 # 處理媒體檔案

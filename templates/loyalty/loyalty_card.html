@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<style>
+    .btn {
+        padding: 8px 20px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    .btn-green {
+        background-color: #28a745;
+    }
+    .btn-red {
+        background-color: #dc3545;
+    }
+    .btn-blue {
+        background-color: #007bff;
+    }
+    .btn-green:hover {
+        background-color: #218838;
+    }
+    .btn-red:hover {
+        background-color: #c82333;
+    }
+    .btn-blue:hover {
+        background-color: #0069d9;
+    }
+</style>
+
+<div style="display: flex; justify-content: center; gap: 50px;">
+    <!-- 左邊：集點卡 + 折扣券 -->
+    <div style="text-align: center;">
+        <h2>集點卡</h2>
+        <p>目前點數：{{ profile.points }}/5</p>
+
+        <img src="{% static 'images/loyalty_cards/loyalty_card_' %}{{ profile.points }}.png" alt="集點卡" style="width:100%; max-width:400px; margin: 20px 0;">
+
+        {% if profile.points >= 5 %}
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit" name="redeem" value="true" class="btn btn-green" style="margin-bottom: 20px;">兌換20%折扣券</button>
+        </form>
+        {% else %}
+        <p style="color: gray;">集滿 5 點即可兌換折扣券</p>
+        {% endif %}
+
+        <h3>你的折扣券</h3>
+        <ul style="list-style: none; padding: 0;">
+            {% for coupon in coupons %}
+                <li style="margin-bottom: 10px;">
+                    折扣碼: {{ coupon.code }} -
+                    {% if coupon.is_used %}
+                        已使用
+                    {% elif coupon.expires_at < now %}
+                        已過期
+                    {% else %}
+                        有效直到：{{ coupon.expires_at|date:"Y年n月j日 H:i" }}
+                        <form method="post" style="display:inline;">
+                            {% csrf_token %}
+                            <button type="submit" name="use_coupon" value="{{ coupon.id }}" class="btn btn-green" style="margin-left: 10px;">使用</button>
+                        </form>
+                    {% endif %}
+                    <form method="post" style="display:inline;">
+                        {% csrf_token %}
+                        <button type="submit" name="delete_coupon" value="{{ coupon.id }}" class="btn btn-red" style="margin-left: 10px;">刪除</button>
+                    </form>
+                </li>
+            {% empty %}
+                <li>你還沒有折扣券。</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <!-- 右邊：加點數 -->
+    <div style="text-align: center;">
+        <h3>加點數 (輸入電話)</h3>
+        <form method="post">
+            {% csrf_token %}
+            <input type="text" name="phone" placeholder="輸入電話" required style="padding: 8px; width: 200px;">
+            <br><br>
+            <button type="submit" class="btn btn-blue">加一點</button>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

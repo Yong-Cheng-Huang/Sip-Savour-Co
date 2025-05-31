@@ -59,49 +59,91 @@
     <h3 class="text-center mb-4">最新活動</h3>
     <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="hover">
       <div class="carousel-inner">
+
+        <!-- 第一張活動卡片 -->
         <div class="carousel-item active">
-          <div class="card mx-auto" style="width: 300px;">
-            <class="card-img-top" alt="活動1">
+          <div class="card mx-auto" style="width: 800px;">
+            <img src="{% static 'images/active1.png' %}" class="card-img-top" alt="元氣鬆餅堡">
             <div class="card-body text-center">
-              <h5 class="card-title">「元氣鬆餅堡」系列登場！</h5>
-              <p class="card-text small">包裹著滑方蛋與起司搭配上濃郁鬆餅<br>層層堆疊出濃濃幸福感。</p>
+              <h5 class="card-title">「元氣鬆餅」系列登場！</h5>
+              <p class="card-text small">百種配料和果醬搭配上濃郁鬆餅<br>層層堆疊出濃濃幸福感。</p>
               <a href="/news" class="btn btn-outline-primary btn-sm">活動資訊</a>
             </div>
           </div>
         </div>
+
+        <!-- 第二張活動卡片 -->
         <div class="carousel-item">
           <div class="card mx-auto" style="width: 300px;">
-            <class="card-img-top" alt="活動2">
+            <img src="{% static 'images/0528.jpg' %}" class="card-img-top" alt="冷萃工藝">
             <div class="card-body text-center">
-              <h5 class="card-title">新品發表會</h5>
-              <p class="card-text small">Sip & Savour 將於 6 月舉辦新品發表會，敬請期待！</p>
+              <h5 class="card-title">冷萃工藝・細品夏日</h5>
+              <p class="card-text small">美好的早晨，從深焙咖啡開始。</p>
               <a href="/news" class="btn btn-outline-primary btn-sm">活動資訊</a>
             </div>
           </div>
         </div>
+
+        <!-- 第三張活動卡片 -->
         <div class="carousel-item">
           <div class="card mx-auto" style="width: 300px;">
-            <class="card-img-top" alt="活動3">
+            <img src="{% static 'images/0521.jpg' %}" class="card-img-top" alt="粉絲回饋活動">
             <div class="card-body text-center">
-              <h5 class="card-title">粉絲回饋活動</h5>
-              <p class="card-text small">感謝支持，粉絲回饋好禮大放送中！</p>
+              <h5 class="card-title">歡慶抹茶季</h5>
+              <p class="card-text small">抹茶旋風來襲！享受飲品新體驗！</p>
               <a href="/news" class="btn btn-outline-primary btn-sm">活動資訊</a>
             </div>
           </div>
         </div>
+
       </div>
-      <!-- 控制箭頭 -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">上一則</span>
+
+      <!-- 自訂箭頭 -->
+      <button class="carousel-control-prev custom-arrow" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+        <img src="{% static 'images/left-arrow.png' %}" alt="上一張" class="arrow-img">
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">下一則</span>
+      <button class="carousel-control-next custom-arrow" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+        <img src="{% static 'images/right-arrow.png' %}" alt="下一張" class="arrow-img">
       </button>
     </div>
   </div>
 </section>
+
+<style>
+  
+/* 自訂箭頭樣式 */
+.custom-arrow {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.custom-arrow:hover {
+  background-color: #f8f9fa;
+}
+
+.arrow-img {
+  width: 20px;
+  height: 20px;
+}
+
+.carousel-control-prev {
+  left: -70px;
+}
+
+.carousel-control-next {
+  right: -70px;
+}
+</style>
+
 
 <!-- Contact Section -->
 <section class="py-5">

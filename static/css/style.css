@@ -351,9 +351,9 @@ footer .copyright {
 
 .brand-story-section {
   position: relative;
-  height: 80vh;
+  height: auto;
   min-height: 500px;
-  max-height: 800px;
+  max-height: none;
   overflow: hidden;
 }
 
@@ -372,66 +372,10 @@ footer .copyright {
   object-position: center;
 }
 
-.brand-story-content {
-  position: relative;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  background: linear-gradient(to right, rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.7));
-  color: #fff;
-}
-
-.brand-story-content h3 {
-  color: #fff;
-  font-weight: 600;
-  position: relative;
-  padding-bottom: 1rem;
-  display: inline-block;
-}
-
-.brand-story-content h3::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60px;
-  height: 3px;
-  background-color: #fff;
-}
-
-.brand-story-content .lead {
-  color: #fff;
-  font-size: 1.2rem;
-  line-height: 1.8;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.brand-story-content p {
-  color: rgba(255, 255, 255, 0.9);
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .about-page h3 {
-  color: #2c3e50;
   font-weight: 600;
   position: relative;
   padding-bottom: 1rem;
-}
-
-.about-page h3::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60px;
-  height: 3px;
-  background-color: #2c3e50;
 }
 
 .about-page .lead {

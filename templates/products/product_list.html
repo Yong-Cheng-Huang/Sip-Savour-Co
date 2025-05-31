@@ -10,6 +10,18 @@
         </ol>
     </nav>
     
+    <!-- 顯示訊息 -->
+    {% if messages %}
+    <div class="messages">
+        {% for message in messages %}
+        <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+            {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+    
     <!-- 分類篩選 -->
     <div class="mb-4">
         <form method="get" class="form-inline">
@@ -27,21 +39,33 @@
     <!-- 產品列表 -->
     <div class="row mb-4">
         {% for product in products %}
-            <div class="col-md-3 mb-4">
-                <div class="card h-100">
-                    {% if product.image %}
-                        <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
-                    {% endif %}
-                    {% if product.is_new %}
-                    <div class="position-absolute top-0 end-0 m-2">
-                        <span class="badge bg-danger">NEW</span>
-                    </div>
-                    {% endif %}
-                    <div class="card-body">
-                        <h5 class="card-title">{{ product.name }}</h5>
-                        <p class="card-text">$ {{ product.price }}</p>
-                        <a href="{% url 'products:product_detail' product.pk %}" class="btn btn-outline-primary mt-3">查看詳情</a>
-                    </div>
+            <div class="col-md-3 mb-5">
+                <div class="card h-100 position-relative">
+                    <a href="{% url 'products:product_detail' product.pk %}" class="text-decoration-none text-dark">
+                        {% if product.image %}
+                            <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
+                        {% endif %}
+                        {% if product.is_new %}
+                        <div class="position-absolute top-0 end-0 m-2">
+                            <span class="badge bg-danger">NEW</span>
+                        </div>
+                        {% endif %}
+                        <div class="card-body d-flex flex-column" style="min-height: 180px;">
+                            <div>
+                                <h5 class="card-title">{{ product.name }}</h5>
+                                <p class="card-text">$ {{ product.price }}</p>
+                            </div>
+                            <div class="mt-auto pt-2">
+                                <form method="post" action="{% url 'cart:add_to_cart' product.id %}" class="d-grid">
+                                    {% csrf_token %}
+                                    <input type="hidden" name="quantity" value="1">
+                                    <button type="submit" class="btn btn-primary">
+                                        <i class="fas fa-shopping-cart"></i> 加入購物車
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         {% empty %}

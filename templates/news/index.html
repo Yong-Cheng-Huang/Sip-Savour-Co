@@ -1,58 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-<style>
-    .news-article {
-        max-width: 800px;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .news-article img {
-        display: block;
-        margin: 0 auto;
-        max-width: 700px;
-        width: 100%;
-        height: auto;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .news-content {
-        margin-bottom: 4rem;
-    }
-
-    .news-content p {
-        margin-bottom: 1rem;
-    }
-
-    .publish-date {
-        font-size: 0.8rem;
-        color: #666;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        margin-bottom: 0.5rem;
-    }
-
-    .news-title {
-        font-size: 2rem;
-        font-weight: 400;
-        letter-spacing: 1px;
-        margin-bottom: 2rem;
-    }
-
-    .divider {
-        width: 60px;
-        height: 2px;
-        background-color: #333;
-        margin: 3rem auto;
-    }
-</style>
-
 <div class="container my-5">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item"><a class="text-decoration-none" href="/">Home</a></li>
         <li class="breadcrumb-item active" aria-current="page">最新消息</li>
       </ol>
     </nav>

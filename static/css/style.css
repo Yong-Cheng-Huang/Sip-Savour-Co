@@ -168,7 +168,7 @@ footer .copyright {
     opacity: 0;
   }
   50% {
-    transform: translateY(-20px);
+    transform: translateY(-8px);
     opacity: 1;
   }
   100% {

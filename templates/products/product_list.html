@@ -3,7 +3,12 @@
 {% block content %}
 {% if user.is_authenticated %}
 <div class="container mt-4">
-    <h3 class="mb-4">產品列表</h3>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="text-decoration-none" href="/">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">產品列表</li>
+        </ol>
+    </nav>
     
     <!-- 分類篩選 -->
     <div class="mb-4">

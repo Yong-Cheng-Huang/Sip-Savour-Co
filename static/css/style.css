@@ -512,7 +512,7 @@ footer .copyright {
 }
 
 .table thead th {
-    background-color: #f8f9fa;
+    /* background-color: #f8f9fa; */
     border-bottom: 2px solid #dee2e6;
     color: #495057;
 }

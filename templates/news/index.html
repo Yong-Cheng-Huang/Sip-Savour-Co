@@ -1,8 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
-
 {% block content %}
-<div class="container my-4">
+<div class="container my-5">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a class="text-decoration-none" href="/">Home</a></li>
@@ -11,34 +10,58 @@
     </nav>
 
     <article class="news-article">
-        <p class="text-muted">{{ publish_date|date:"F jS, Y" }}</p>
-        <h2 class="mb-4">{{ title }}</h2>
-
-        <img src="{% static 'images/news.jpg' %}" alt="新品上市" class="img-fluid mb-4">
-
+        {% for news in page_obj %}
         <div class="news-content">
-            <p><strong>全新「元氣鬆餅堡」系列正式登場！</strong></p>
-            <p>鬆餅香甜酥的麵餅，包裹著滑方蛋與起司，搭配上濃郁鬆餅，層層堆疊出濃濃幸福感。</p>
+            <!-- 日期 -->
+            <p class="publish-date">{{ news.publish_date|date:"F jS, Y" }}</p>
 
-            <h5>新品品項：</h5>
-            <ul>
-                <li>寶寶蛋鬆餅堡 $65</li>
-                <li>培根蛋鬆餅堡 $70</li>
-                <li>豬肉蛋鬆餅堡 $80</li>
-            </ul>
+            <!-- 標題 -->
+            <h2 class="news-title">{{ news.title }}</h2>
 
-            <h5>超值早餐組合 <span class="text-warning">11:00 AM 前限定</span></h5>
-            <ul>
-                <li>火腿蛋鬆餅堡</li>
-                <li>+ 熱美式 $70</li>
-                <li>+ 冰美式 $90</li>
-                <li>+ 熱奶茶 $95</li>
-                <li>+ 冰奶茶 $105</li>
-            </ul>
+            <!-- 圖片 -->
+            <img src="{% static news.image %}" alt="{{ news.title }}" class="img-fluid mb-4">
 
-            <p>5/16(五)當天，全台門市，憑卡打卡，<strong>你打卡我請鬆餅，數量有限贈完為止！</strong></p>
-            <p>早來不寂寞，一口咬定的是美好元氣 ❤️</p>
+            <!-- 內容段落 -->
+            {% for paragraph in news.content %}
+                <p>{{ paragraph }}</p>
+            {% endfor %}
         </div>
+
+        {% if not forloop.last %}
+        <!-- 分隔線，最後一個不要 -->
+        <div class="divider"></div>
+        {% endif %}
+        {% endfor %}
     </article>
+</div>
+
+<div class="pagination justify-content-center my-4">
+    <nav aria-label="Page navigation">
+        <ul class="pagination">
+            {% if page_obj.has_previous %}
+                <li class="page-item">
+                    <a class="page-link" href="?page={{ page_obj.previous_page_number }}" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+            {% endif %}
+
+            {% for num in page_obj.paginator.page_range %}
+                {% if page_obj.number == num %}
+                    <li class="page-item active"><span class="page-link">{{ num }}</span></li>
+                {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+                    <li class="page-item"><a class="page-link" href="?page={{ num }}">{{ num }}</a></li>
+                {% endif %}
+            {% endfor %}
+
+            {% if page_obj.has_next %}
+                <li class="page-item">
+                    <a class="page-link" href="?page={{ page_obj.next_page_number }}" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            {% endif %}
+        </ul>
+    </nav>
 </div>
 {% endblock %}

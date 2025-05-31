@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from products.models import Product
+from datetime import date
+from django.core.paginator import Paginator
 
 def home(request):
     featured_products = Product.objects.filter(is_featured=True)[:3]
@@ -9,8 +11,84 @@ def home(request):
     return render(request, 'home.html', context)
 
 def news_index(request):
-    context = {
-        'title': '元氣鬆餅堡｜新品上市',
-        'publish_date': '2025-05-16',
-    }
-    return render(request, 'news/index.html', context)
+    news_list = [
+        {
+            'publish_date': date(2025, 6, 4),
+            'title': 'SipSavour 全新菜單 Coming Soon ✨',
+            'image': 'images/0604.jpg',
+            'content': [
+                '🍋 【沁涼特調】手工現榨檸檬搭配薄荷香氣，清新直擊味蕾，一口喝走盛夏的燥熱。',
+                '🥗 【活力沙拉碗】嚴選鮮嫩雞胸，搭配多彩時蔬與穀物，輕盈無負擔，健康滿分。',
+                '🥞 【經典鬆餅塔】金黃酥香的鬆餅層層堆疊，淋上香甜楓糖，每一口都是幸福感爆棚。',
+                '🍛 【風味焗烤飯】特製香料飯搭配豐富配料，起司焗烤香氣四溢，溫暖你的每個午後。',
+                '📅 2025年6月14日 全新登場｜首日打卡享驚喜好禮，數量有限，送完為止！',
+                'SipSavour — 用心選料，用味道記住每個季節。'
+            ]
+        },
+        {
+            'publish_date': date(2025, 5, 28),
+            'title': 'SipSavour 冷萃工藝・細品夏日',
+            'image': 'images/0528.jpg',
+            'content': [
+                '夏日炎炎，來一杯手工冷萃的細膩沁涼。',
+                '我們嚴選高品質咖啡豆，歷經長時低溫慢釀，綻放出絲滑香氣與溫潤口感，只為給你專屬於夏季的極致享受。',
+                '📅 即日起至 2025年5月28日｜全品項冷萃系列享 30% OFF',
+                '歡迎光臨門市或線上訂購，與我們一同細品這個夏日。'
+            ]
+        },
+        {
+            'publish_date': date(2025, 5, 21),
+            'title': 'SipSavour 期間限定 抹茶狂熱',
+            'image': 'images/0521.jpg',
+            'content': [
+                '嚴選上等抹茶粉，融合冰涼口感，完美調製三款經典抹茶飲品：',
+                '細膩打磨的【抹茶冰沙】，帶來極致清涼；'
+                '香醇馥郁的【抹茶牛奶】，層層交疊奶香與茶韻；'
+                '綿密濃郁的【抹茶鮮奶油特調】，讓每一口都回味無窮。'
+                '每一杯，都是對抹茶的極致詮釋，每一口，都是夏日專屬的療癒時光',
+                '✨ 限時限定｜ONLY 7 DAYS！'
+            ]
+        },
+        {
+            'publish_date': date(2025, 5, 14),
+            'title': 'SipSavour 早晨好食光',
+            'image': 'images/0514.jpg',
+            'content': [
+                '春夏交替的清晨，怎麼能少了溫暖療癒的早午餐？',
+                '帕尼尼烤雞三明治'
+                '金黃酥脆的帕尼尼，夾入鮮嫩烤雞與清脆生菜，外酥內潤，簡單而美好'
+                '切達起司火腿堡'
+                '經典火腿與香濃切達起司，搭配蓬鬆麵包，每一口都是熟悉又溫柔的滋味。'
+                '香草培根嫩蔬堡'
+                '脆烤培根佐上義式香草醬，搭配鮮蔬層層堆疊，輕盈中帶點濃郁。'
+                '全麥元氣火腿三明治'
+                '全麥麵包搭配新鮮蔬菜與低脂火腿，清爽無負擔，專為忙碌的你而準備。'
+                '早餐時段開賣，售完為止'
+                '用一份晨間儀式，為自己準備一個溫柔又美好的開始。'
+            ]
+        },
+        {
+            'publish_date': date(2025, 5, 7),
+            'title': 'SipSavour 母親節限定 | 感謝有妳',
+            'image': 'images/0507.jpg',
+            'content': [
+                '在這個屬於母親的特別日子，SipSavour 獻上最溫柔的祝福,',
+                '一杯咖啡，一份心意，獻給世界上最溫暖的存在。'
+                '即日起至 2025年5月12日，'
+                '消費滿 500 元，即享 50% OFF 限量折扣券 一張。'
+                '咖啡全品項不限口味使用'
+                '甜點系列同步適用'
+                '活動期間： 2025/5/7 – 5/13'
+                '不妨以一杯溫熱的咖啡，陪媽媽一起，慢慢享受午後的溫柔時光。'
+            ]
+        }
+    ]
+
+        # 加上分頁功能：每頁顯示 2 筆
+    paginator = Paginator(news_list, 2)
+
+    # 取得目前頁碼 (如果沒有就預設第 1 頁)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+
+    return render(request, 'news/index.html', {'page_obj': page_obj})

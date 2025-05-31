@@ -1,0 +1,229 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load order_tags %}
+
+{% block title %}訂單詳情 - SipSavour{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="text-decoration-none" href="/">Home</a></li>
+            <li class="breadcrumb-item"><a class="text-decoration-none" href="{% url 'orders:order_list' %}">我的訂單</a></li>
+            <li class="breadcrumb-item active" aria-current="page">訂單詳情</li>
+        </ol>
+    </nav>
+
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card mb-4">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">訂單詳情</h5>
+                    <span class="badge {% if order.status == 'pending' %}bg-warning
+                                     {% elif order.status == 'confirmed' %}bg-info
+                                     {% elif order.status == 'processing' %}bg-primary
+                                     {% elif order.status == 'shipped' %}bg-info
+                                     {% elif order.status == 'delivered' %}bg-success
+                                     {% else %}bg-danger{% endif %}">
+                        {{ order.get_status_display }}
+                    </span>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <p class="mb-1"><strong>訂單編號：</strong></p>
+                            <p>{{ order.order_number }}</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="mb-1"><strong>訂單日期：</strong></p>
+                            <p>{{ order.created_at|date:"Y-m-d H:i" }}</p>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <p class="mb-1"><strong>收件人：</strong></p>
+                            <p>{{ order.name }}</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="mb-1"><strong>聯絡電話：</strong></p>
+                            <p>{{ order.phone }}</p>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <p class="mb-1"><strong>電子郵件：</strong></p>
+                        <p>{{ order.email }}</p>
+                    </div>
+                    <div class="mb-3">
+                        <p class="mb-1"><strong>收件地址：</strong></p>
+                        <p>{{ order.address }}</p>
+                    </div>
+                    {% if order.notes %}
+                    <div class="mb-3">
+                        <p class="mb-1"><strong>訂單備註：</strong></p>
+                        <p>{{ order.notes }}</p>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">訂單項目</h5>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table align-middle">
+                            <thead>
+                                <tr>
+                                    <th>商品</th>
+                                    <th>單價</th>
+                                    <th>數量</th>
+                                    <th>小計</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for item in order.items.all %}
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            {% if item.product.image %}
+                                            <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}" 
+                                                 class="img-thumbnail" style="width: 50px; height: 50px; object-fit: cover;">
+                                            {% endif %}
+                                            <span class="ms-2">{{ item.product.name }}</span>
+                                        </div>
+                                    </td>
+                                    <td>$ {{ item.price }}</td>
+                                    <td>{{ item.quantity }}</td>
+                                    <td>$ {{ item.price|multiply:item.quantity }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="3" class="text-end"><strong>總計：</strong></td>
+                                    <td><strong>$ {{ order.total_price }}</strong></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">訂單狀態</h5>
+                </div>
+                <div class="card-body">
+                    <div class="timeline">
+                        <div class="timeline-item {% if order.status != 'cancelled' %}active{% endif %}">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h6 class="mb-0">訂單已建立</h6>
+                                <small class="text-muted">{{ order.created_at|date:"Y-m-d H:i" }}</small>
+                            </div>
+                        </div>
+                        <div class="timeline-item {% if order.status in 'confirmed,processing,shipped,delivered' %}active{% endif %}">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h6 class="mb-0">店家已接單</h6>
+                                <small class="text-muted">
+                                    {% if order.status in 'confirmed,processing,shipped,delivered' %}
+                                    {{ order.updated_at|date:"Y-m-d H:i" }}
+                                    {% else %}
+                                    等待處理
+                                    {% endif %}
+                                </small>
+                            </div>
+                        </div>
+                        <div class="timeline-item {% if order.status in 'processing,shipped,delivered' %}active{% endif %}">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h6 class="mb-0">處理中</h6>
+                                <small class="text-muted">
+                                    {% if order.status in 'processing,shipped,delivered' %}
+                                    {{ order.updated_at|date:"Y-m-d H:i" }}
+                                    {% else %}
+                                    等待處理
+                                    {% endif %}
+                                </small>
+                            </div>
+                        </div>
+                        <div class="timeline-item {% if order.status in 'shipped,delivered' %}active{% endif %}">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h6 class="mb-0">已出貨</h6>
+                                <small class="text-muted">
+                                    {% if order.status in 'shipped,delivered' %}
+                                    {{ order.updated_at|date:"Y-m-d H:i" }}
+                                    {% else %}
+                                    等待處理
+                                    {% endif %}
+                                </small>
+                            </div>
+                        </div>
+                        <div class="timeline-item {% if order.status == 'delivered' %}active{% endif %}">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h6 class="mb-0">已送達</h6>
+                                <small class="text-muted">
+                                    {% if order.status == 'delivered' %}
+                                    {{ order.updated_at|date:"Y-m-d H:i" }}
+                                    {% else %}
+                                    等待處理
+                                    {% endif %}
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #e9ecef;
+    border: 2px solid #dee2e6;
+}
+
+.timeline-item.active .timeline-marker {
+    background: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.timeline-item:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 15px;
+    height: calc(100% + 5px);
+    width: 2px;
+    background: #dee2e6;
+}
+
+.timeline-item.active:not(:last-child)::before {
+    background: #0d6efd;
+}
+</style>
+{% endblock %} 

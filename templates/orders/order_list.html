@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}我的訂單 - SipSavour{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="text-decoration-none" href="/">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">我的訂單</li>
+        </ol>
+    </nav>
+
+    {% if messages %}
+    <div class="messages">
+        {% for message in messages %}
+        <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+            {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if orders %}
+    <div class="table-responsive">
+        <table class="table align-middle">
+            <thead class="table-light">
+                <tr>
+                    <th>訂單編號</th>
+                    <th>訂單日期</th>
+                    <th>總金額</th>
+                    <th>狀態</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for order in orders %}
+                <tr>
+                    <td>
+                        <a href="{% url 'orders:order_detail' order.id %}" class="text-decoration-none text-dark">
+                            {{ order.order_number }}
+                        </a>
+                    </td>
+                    <td>{{ order.created_at|date:"Y-m-d H:i" }}</td>
+                    <td>$ {{ order.total_price }}</td>
+                    <td>
+                        <span class="badge {% if order.status == 'pending' %}bg-warning
+                                         {% elif order.status == 'confirmed' %}bg-info
+                                         {% elif order.status == 'processing' %}bg-primary
+                                         {% elif order.status == 'shipped' %}bg-info
+                                         {% elif order.status == 'delivered' %}bg-success
+                                         {% else %}bg-danger{% endif %}">
+                            {{ order.get_status_display }}
+                        </span>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% else %}
+    <div class="text-center py-5">
+        <i class="fas fa-shopping-bag fa-3x mb-3 text-muted"></i>
+        <h4 class="text-muted">您還沒有任何訂單</h4>
+        <a href="{% url 'products:product_list' %}" class="btn btn-primary mt-3">
+            開始購物
+        </a>
+    </div>
+    {% endif %}
+</div>
+{% endblock %} 

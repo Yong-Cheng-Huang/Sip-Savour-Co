@@ -16,11 +16,10 @@ Including another URLconf
 """
 
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 # from django.views.generic import TemplateView
-from django.conf.urls import include
 from products import views as product_views
 from account import views as account_views
 
@@ -36,6 +35,8 @@ urlpatterns = [
     path("contact/", include("contact.urls")),
     path("about/", include("about.urls")),
     path("news/", include("news.urls")),
+    path("cart/", include("cart.urls")),
+    path("orders/", include("orders.urls")),
 ]
 
 # 處理媒體檔案

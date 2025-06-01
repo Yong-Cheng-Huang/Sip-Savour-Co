@@ -5,4 +5,5 @@ app_name = 'about'
 
 urlpatterns = [
     path('', views.about_view, name='about'),
+    path('feature/<str:feature_id>/', views.feature_detail, name='feature_detail'),
 ]

@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{ feature.title }} - SipSavour{% endblock %}
+
+{% block content %}
+{% if user.is_authenticated %}
+<div class="container" style="width: 80%; border-left: 1px solid #e0e0e0; border-right: 1px solid #e0e0e0;">
+    <nav aria-label="breadcrumb" class="pt-4 ps-4">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'home' %}" class="text-decoration-none">首頁</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'about:about' %}" class="text-decoration-none">關於我們</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{ feature.title }}</li>
+        </ol>
+    </nav>
+
+    <div class="row pt-4">
+        <!-- 特色標題和主圖 -->
+        <div class="col-12 mb-5">
+            <h2 class="text-center mb-5">{{ feature.title }}</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <img src="{% static feature.image %}" alt="{{ feature.title }}" class="img-fluid rounded w-100" style="height: 300px; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+
+        <!-- 特色詳細內容 -->
+        <div class="col-lg-8 mx-auto">
+            <section class="mb-5 p-4 rounded">
+                <div class="d-inline-block position-relative mb-4">
+                    <div class="position-absolute" style="background-color: #000; transform: skewX(-15deg); width: 120%; height: 100%; left: -10%;"></div>
+                    <h5 class="position-relative text-white mb-0 px-4 py-2">特色介紹</h5>
+                </div>
+                <p class="mb-0">{{ feature.description }}</p>
+            </section>
+            
+            {% if feature.details %}
+            <section class="mb-5 p-4 rounded">
+                <div class="d-inline-block position-relative mb-4">
+                    <div class="position-absolute" style="background-color: #000; transform: skewX(-15deg); width: 120%; height: 100%; left: -10%;"></div>
+                    <h5 class="position-relative text-white mb-0 px-4 py-2">詳細說明</h5>
+                </div>
+                <ul class="list-unstyled">
+                    {% for detail in feature.details %}
+                    <li class="mb-3">
+                        <i class="fas fa-check-circle text-primary me-2"></i>
+                        {{ detail }}
+                    </li>
+                    {% endfor %}
+                </ul>
+            </section>
+            {% endif %}
+
+            {% if feature.benefits %}
+            <section class="mb-5 p-4 rounded">
+                <div class="d-inline-block position-relative mb-4">
+                    <div class="position-absolute" style="background-color: #000; transform: skewX(-15deg); width: 120%; height: 100%; left: -10%;"></div>
+                    <h5 class="position-relative text-white mb-0 px-4 py-2">優勢特點</h5>
+                </div>
+                <div class="row">
+                    {% for benefit in feature.benefits %}
+                    <div class="col-md-6 mb-3">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-star text-warning me-2"></i>
+                            <span>{{ benefit }}</span>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+            {% endif %}
+
+            <!-- 相關產品或服務 -->
+            {% if feature.related_items %}
+            <section class="p-4 rounded" style="background-color: white;">
+                <div class="d-inline-block position-relative mb-4">
+                    <div class="position-absolute" style="background-color: #000; transform: skewX(-15deg); width: 120%; height: 100%; left: -10%;"></div>
+                    <h5 class="position-relative text-white mb-0 px-4 py-2">相關產品</h5>
+                </div>
+                <div class="row">
+                    {% for item in feature.related_items %}
+                    <div class="col-md-6 mb-4">
+                        <div class="bg-white rounded overflow-hidden" style="height: 350px;">
+                            <img src="{% static item.image %}" class="w-100" alt="{{ item.name }}" style="height: 200px; object-fit: cover;">
+                            <div class="p-3">
+                                <h5 class="mb-2">{{ item.name }}</h5>
+                                <p class="mb-0">{{ item.description }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- 返回按鈕 -->
+    <div class="text-center pb-5">
+        <a href="{% url 'about:about' %}" class="btn btn-outline-primary">
+            <i class="fas fa-arrow-left me-2"></i>返回關於我們
+        </a>
+    </div>
+</div>
+{% else %}
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+            <h3 class="mb-4">特色詳情</h3>
+            <p class="lead mb-4">您需要登入才能查看詳細內容。</p>
+            <a href="{% url 'login' %}" class="btn btn-primary">登入</a>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endblock %} 

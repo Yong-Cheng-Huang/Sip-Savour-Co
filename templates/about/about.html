@@ -53,55 +53,97 @@
         <h3>我們的特色</h3>
       </div>
       <div class="col-md-6 mb-5">
-        <div class="feature-item">
-          <div class="row g-0">
-            <div class="col-5">
-              <img src="{% static 'images/about/tea.jpg' %}" alt="嚴選茶葉" class="img-fluid rounded" style="height: 200px; object-fit: cover;">
-            </div>
-            <div class="col-7 ps-3">
-              <h5>嚴選茶葉</h5>
-              <p>精選台灣高山茶葉，確保每一杯都香醇回甘。</p>
+        <a href="{% url 'about:feature_detail' 'tea' %}" class="text-decoration-none text-dark">
+          <div class="feature-item">
+            <div class="row g-0">
+              <div class="col-5">
+                <img src="{% static 'images/about/tea.jpg' %}" alt="嚴選茶葉" class="img-fluid rounded" style="height: 200px; object-fit: cover;">
+              </div>
+              <div class="col-7 ps-3">
+                <h5>嚴選茶葉</h5>
+                <p>精選台灣高山茶葉，確保每一杯都香醇回甘。</p>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
       <div class="col-md-6 mb-5">
-        <div class="feature-item">
-          <div class="row g-0">
-            <div class="col-5">
-              <img src="{% static 'images/about/ingredients.jpg' %}" alt="天然原料" class="img-fluid rounded" style="height: 200px; object-fit: cover;">
-            </div>
-            <div class="col-7 ps-3">
-              <h5>天然原料</h5>
-              <p>使用天然食材，無添加人工香料與色素。</p>
+        <a href="{% url 'about:feature_detail' 'ingredients' %}" class="text-decoration-none text-dark">
+          <div class="feature-item">
+            <div class="row g-0">
+              <div class="col-5">
+                <img src="{% static 'images/about/ingredients.jpg' %}" alt="天然原料" class="img-fluid rounded" style="height: 200px; object-fit: cover;">
+              </div>
+              <div class="col-7 ps-3">
+                <h5>天然原料</h5>
+                <p>使用天然食材，無添加人工香料與色素。</p>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
       <div class="col-md-6 mb-5">
-        <div class="feature-item">
-          <div class="row g-0">
-            <div class="col-5">
-              <img src="{% static 'images/about/process.jpg' %}" alt="專業製程" class="img-fluid rounded" style="height: 200px; object-fit: cover;">
-            </div>
-            <div class="col-7 ps-3">
-              <h5>專業製程</h5>
-              <p>採用標準化製程，確保品質穩定。</p>
+        <a href="{% url 'about:feature_detail' 'process' %}" class="text-decoration-none text-dark">
+          <div class="feature-item">
+            <div class="row g-0">
+              <div class="col-5">
+                <img src="{% static 'images/about/process.jpg' %}" alt="專業製程" class="img-fluid rounded" style="height: 200px; object-fit: cover;">
+              </div>
+              <div class="col-7 ps-3">
+                <h5>專業製程</h5>
+                <p>採用標準化製程，確保品質穩定。</p>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
       <div class="col-md-6 mb-5">
-        <div class="feature-item">
-          <div class="row g-0">
-            <div class="col-5">
-              <img src="{% static 'images/about/service.jpg' %}" alt="貼心服務" class="img-fluid rounded" style="height: 200px; object-fit: cover;">
-            </div>
-            <div class="col-7 ps-3">
-              <h5>貼心服務</h5>
-              <p>提供客製化服務，滿足每位顧客的需求。</p>
+        <a href="{% url 'about:feature_detail' 'service' %}" class="text-decoration-none text-dark">
+          <div class="feature-item">
+            <div class="row g-0">
+              <div class="col-5">
+                <img src="{% static 'images/about/service.jpg' %}" alt="貼心服務" class="img-fluid rounded" style="height: 200px; object-fit: cover;">
+              </div>
+              <div class="col-7 ps-3">
+                <h5>貼心服務</h5>
+                <p>提供客製化服務，滿足每位顧客的需求。</p>
+              </div>
             </div>
           </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- 團隊成員 -->
+    <div class="row mb-5">
+      <div class="col-12 text-center mb-5">
+        <h3>團隊成員</h3>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="team-member text-center">
+          <div class="mb-3">
+            <i class="fas fa-user-tie fa-3x"></i>
+          </div>
+          <h4>黃永丞</h4>
+          <p class="text-muted">CEO</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="team-member text-center">
+          <div class="mb-3">
+            <i class="fas fa-store fa-3x"></i>
+          </div>
+          <h4>潘俊廷</h4>
+          <p class="text-muted">分店老闆</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="team-member text-center">
+          <div class="mb-3">
+            <i class="fas fa-store fa-3x"></i>
+          </div>
+          <h4>蔡尚廷</h4>
+          <p class="text-muted">分店老闆</p>
         </div>
       </div>
     </div>

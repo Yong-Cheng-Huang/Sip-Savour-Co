@@ -3,8 +3,8 @@ from .models import Profile, Coupon
 
 @admin.register(Profile)
 class ProfileAdmin(admin.ModelAdmin):
-    list_display = ('user', 'phone', 'points')
-    search_fields = ('user__username', 'phone')
+    list_display = ('user', 'points')
+    search_fields = ('user__username',)
 
 @admin.register(Coupon)
 class CouponAdmin(admin.ModelAdmin):

@@ -90,16 +90,95 @@
                                 {% endfor %}
                             </tbody>
                             <tfoot>
+                                {% if applied_coupon %}
+                                <tr>
+                                    <td colspan="2" class="text-end">優惠券折扣：</td>
+                                    <td class="text-danger">- $ {{ discount_amount }}</td>
+                                </tr>
+                                {% endif %}
                                 <tr>
                                     <td colspan="2" class="text-end"><strong>總計：</strong></td>
-                                    <td><strong>$ {{ cart.total_price }}</strong></td>
+                                    <td><strong>$ {{ final_price }}</strong></td>
                                 </tr>
                             </tfoot>
                         </table>
+                    </div>
+
+                                        
+                    <!-- 優惠券區塊 -->
+                    <div class="mt-4">
+                        <h6 class="mb-3">使用優惠券</h6>
+                        {% if applied_coupon %}
+                        <div class="alert alert-success">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <i class="fas fa-ticket-alt me-2"></i>
+                                    <strong>{{ applied_coupon }}</strong>
+                                </div>
+                                <form method="post" action="{% url 'orders:remove_coupon' %}" class="d-inline">
+                                    {% csrf_token %}
+                                    <button type="submit" class="btn btn-sm btn-outline-danger d-inline-flex align-items-center">
+                                        <i class="fas fa-times me-1"></i>移除
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        {% else %}
+                        <form method="post" action="{% url 'orders:apply_coupon' %}" class="d-flex justify-content-center">
+                            {% csrf_token %}
+                            <div class="d-flex flex-column gap-2" style="max-width: 500px; width: 100%;">
+                                <select name="coupon_code" class="form-select" id="couponSelect" onchange="updateApplyButton()" required>
+                                    <option value="">選擇優惠券</option>
+                                    {% for coupon in available_coupons %}
+                                    <option value="{{ coupon.code }}">
+                                        {{ coupon.code }} ({{ coupon.discount }}% 折扣，有效期至 {{ coupon.expires_at|date:"Y/m/d" }})
+                                    </option>
+                                    {% endfor %}
+                                </select>
+                                <button type="submit" class="btn btn-primary" id="applyButton" disabled>
+                                    <i class="fas fa-check"></i> 使用
+                                </button>
+                            </div>
+                        </form>
+                        {% if not available_coupons %}
+                        <div class="text-center text-muted mt-2">
+                            <small><i class="fas fa-info-circle"></i> 目前沒有可用的優惠券</small>
+                        </div>
+                        {% endif %}
+                        {% endif %}
+                        {% if coupon_error %}
+                        <div class="alert alert-danger mt-2">
+                            <i class="fas fa-exclamation-circle"></i> {{ coupon_error }}
+                        </div>
+                        {% endif %}
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+function updateApplyButton() {
+    const select = document.getElementById('couponSelect');
+    const button = document.getElementById('applyButton');
+    
+    if (select && button) {
+        button.disabled = !select.value;
+        
+        if (select.value) {
+            button.classList.remove('btn-outline-primary');
+            button.classList.add('btn-primary');
+        } else {
+            button.classList.remove('btn-primary');
+            button.classList.add('btn-outline-primary');
+        }
+    }
+}
+
+// 頁面載入時初始化按鈕狀態
+document.addEventListener('DOMContentLoaded', function() {
+    updateApplyButton();
+});
+</script>
 {% endblock %} 

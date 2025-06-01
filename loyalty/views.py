@@ -6,6 +6,7 @@ from datetime import timedelta
 from django.shortcuts import get_object_or_404
 from django.contrib import messages
 from django.utils.timezone import now
+from django.contrib.auth.models import User
 
 
 @login_required
@@ -13,30 +14,18 @@ def loyalty_card(request):
     now = timezone.now()
 
     if not hasattr(request.user, 'profile'):
-        Profile.objects.create(user=request.user, phone="請補填手機號")
+        Profile.objects.create(user=request.user)
 
     profile = request.user.profile
-
     local_message = None
 
     if request.method == 'POST':
-        if request.user.is_superuser:
-            phone = request.POST.get('phone')
-            try:
-                target_profile = Profile.objects.get(phone=phone)
-                target_profile.points += 1
-                target_profile.save()
-                profile.refresh_from_db()
-                local_message = f"已成功幫 {phone} 加 1 點！"
-            except Profile.DoesNotExist:
-                local_message = f"找不到電話 {phone}，請確認輸入正確！"
-
-        elif 'delete_coupon' in request.POST:
+        if 'delete_coupon' in request.POST:
             coupon_id = request.POST.get('delete_coupon')
             coupon = get_object_or_404(Coupon, id=coupon_id, user=request.user)
             coupon.delete()
             local_message = "已成功刪除折扣券！"
-
+            
         elif 'redeem' in request.POST:
             profile = request.user.profile
             if profile.points >= 5:
@@ -47,8 +36,6 @@ def loyalty_card(request):
                 local_message = "兌換成功！已新增一張折扣券。"
             else:
                 local_message = "你的點數還沒集滿 5 點，不能兌換喔！"
-
-            
             
         elif 'use_coupon' in request.POST:
             coupon_id = request.POST.get('use_coupon')
@@ -57,10 +44,10 @@ def loyalty_card(request):
             coupon.save()
             local_message = "優惠券已標記為已使用！"
 
-        # ✅ ✅ ✅ 這裡重新抓最新的 coupon
-        profile = request.user.profile
-        coupons = Coupon.objects.filter(user=request.user)
-
+        coupons = Coupon.objects.filter(user=request.user).order_by(
+            'is_used',  # 未使用的排在前面
+            'expires_at'  # 過期的排在後面
+        )
         return render(request, 'loyalty/loyalty_card.html', {
             'profile': profile,
             'coupons': coupons,
@@ -68,10 +55,10 @@ def loyalty_card(request):
             'local_message': local_message,
         })
 
-    # GET 的情況
-    profile = request.user.profile
-    coupons = Coupon.objects.filter(user=request.user)
-
+    coupons = Coupon.objects.filter(user=request.user).order_by(
+        'is_used',  # 未使用的排在前面
+        'expires_at'  # 過期的排在後面
+    )
     return render(request, 'loyalty/loyalty_card.html', {
         'profile': profile,
         'coupons': coupons,

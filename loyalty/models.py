@@ -8,7 +8,6 @@ from django.dispatch import receiver
 
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    phone = models.CharField(max_length=15, unique=True)
     points = models.PositiveIntegerField(default=0)
 
     def __str__(self):

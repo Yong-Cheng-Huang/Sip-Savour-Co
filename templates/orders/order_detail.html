@@ -101,8 +101,18 @@
                             </tbody>
                             <tfoot>
                                 <tr>
-                                    <td colspan="3" class="text-end"><strong>總計：</strong></td>
-                                    <td><strong>$ {{ order.total_price }}</strong></td>
+                                    <td colspan="3" class="text-end">商品總額：</td>
+                                    <td>$ {{ order.total_price }}</td>
+                                </tr>
+                                {% if order.discount_amount > 0 %}
+                                <tr>
+                                    <td colspan="3" class="text-end">優惠折扣：</td>
+                                    <td class="text-danger">-$ {{ order.discount_amount }}</td>
+                                </tr>
+                                {% endif %}
+                                <tr>
+                                    <td colspan="3" class="text-end"><strong>應付金額：</strong></td>
+                                    <td><strong>$ {{ order.final_price }}</strong></td>
                                 </tr>
                             </tfoot>
                         </table>

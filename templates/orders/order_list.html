@@ -42,8 +42,14 @@
                             {{ order.order_number }}
                         </a>
                     </td>
-                    <td>{{ order.created_at|date:"Y-m-d H:i" }}</td>
-                    <td>$ {{ order.total_price }}</td>
+                    <td>{{ order.created_at|date:"Y/m/d H:i" }}</td>
+                    <td>
+                        {% if order.discount_amount > 0 %}
+                        <div class="text-decoration-line-through text-muted">$ {{ order.total_price }}</div>
+                        <div class="text-danger">-$ {{ order.discount_amount }}</div>
+                        {% endif %}
+                        <div class="fw-bold">$ {{ order.final_price }}</div>
+                    </td>
                     <td>
                         <span class="badge {% if order.status == 'pending' %}bg-warning
                                          {% elif order.status == 'confirmed' %}bg-info

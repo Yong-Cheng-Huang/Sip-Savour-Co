@@ -21,7 +21,7 @@
         <h3 class="text-center mb-5">精選推薦</h3>
         <div class="row g-4 justify-content-center">
             {% for product in featured_products %}
-            <div class="col-md-4">
+            <div class="col-md-4" style="max-width: 420px;">
                 <div class="card h-100">
                     {% if product.image %}
                         <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">

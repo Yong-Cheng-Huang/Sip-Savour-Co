@@ -93,7 +93,7 @@
         <h2>集點卡</h2>
         <div class="points-card">
             <p>目前點數：{{ profile.points }}/5</p>
-            <img src="{% static 'images/loyalty_cards/card_' %}{{ profile.points }}.png" alt="集點卡">
+            <img src="{% static 'images/loyalty_cards/card_' %}{% if profile.points >= 5 %}5{% else %}{{ profile.points }}{% endif %}.png" alt="集點卡">
 
             {% if profile.points >= 5 %}
             <form method="post">

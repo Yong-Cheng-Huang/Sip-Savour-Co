@@ -3,9 +3,25 @@
 
 {% block content %}
 <style>
+    footer {
+        display: none;
+    }
+
     body {
-        background: url('{% static "images/background.png" %}') no-repeat center center fixed;
+        position: relative;
+    }
+
+    body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('{% static "images/background.png" %}') no-repeat center center;
         background-size: cover;
+        opacity: 0.8;
+        z-index: -1;
     }
 
     .fortune-container {
@@ -100,8 +116,8 @@
 
 <div class="fortune-container">
     <div class="fortune-title">
-        <h1>試試你的運氣吧</h1>
-        <h4>點擊卡片抽取今日運勢!</h4>
+        <h1 style="font-size: 32px; font-weight: bold; margin-bottom: 10px; text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);">試試你的運氣吧</h1>
+        <h5 style="font-size: 18px; font-weight: bold; margin-bottom: 10px; text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);">點擊卡片抽取今日運勢 !</h5>
     </div>
 
     <div class="fortune-content">

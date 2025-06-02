@@ -139,7 +139,7 @@ def news_index(request):
         }
     ]
 
-        # 加上分頁功能：每頁顯示 2 筆
+        # 加上分頁功能：每頁顯示 3 筆
     paginator = Paginator(news_list, 3)
 
     # 取得目前頁碼 (如果沒有就預設第 1 頁)

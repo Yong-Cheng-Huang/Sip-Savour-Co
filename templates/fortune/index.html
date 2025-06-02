@@ -1,0 +1,194 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<style>
+    body {
+        background: url('{% static "images/background.png" %}') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .fortune-container {
+        text-align: center;
+        margin: 50px 0;
+        color: #fff; /* 文字變亮 */
+    }
+
+    .fortune-title {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* 標題加陰影讓文字清楚 */
+    }
+
+    .fortune-content {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+
+    .card-container {
+        position: relative;
+        width: 300px;
+        height: 450px;
+        cursor: pointer;
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.7); /* 陰影加深讓卡片跳出背景 */
+        overflow: hidden;
+        background-color: #fff; /* 卡片底色，防止透明 */
+    }
+
+    .card-back, .card-front {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: transform 0.8s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.8s ease;
+    }
+
+    .card-front {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    .card-front.show {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .card-info {
+        text-align: left;
+        max-width: 400px;
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.6); /* 表格背景半透明黑，文字更清楚 */
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+
+    .card-info table {
+        width: 100%;
+        border-collapse: collapse;
+        color: #fff;
+    }
+
+    .card-info th, .card-info td {
+        text-align: left;
+        padding: 10px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        font-size: 18px;
+    }
+
+    @media (max-width: 768px) {
+        .fortune-content {
+            flex-direction: column;
+            gap: 20px;
+        }
+        .card-info {
+            text-align: center;
+        }
+    }
+</style>
+
+<div class="fortune-container">
+    <div class="fortune-title">
+        <h1>試試你的運氣吧</h1>
+        <h4>點擊卡片抽取今日運勢!</h4>
+    </div>
+
+    <div class="fortune-content">
+        <!-- 卡片，點擊觸發 -->
+        <div class="card-container" onclick="toggleCard()">
+            <div class="card-back" id="cardBack" style="background-image: url('{% static back_image %}');"></div>
+            <div class="card-front" id="cardFront" style="background-image: url('{% static card.image %}');"></div>
+        </div>
+
+        <!-- 卡片資訊 -->
+        <div class="card-info" id="cardInfo">
+            <table>
+                <tr>
+                    <th>牌名</th>
+                    <td id="cardName">?</td>
+                </tr>
+                <tr>
+                    <th>詮釋</th>
+                    <td id="cardDescription">?</td>
+                </tr>
+                <tr>
+                    <th>今日運勢</th>
+                    <td id="cardAdvice">?</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script>
+    let showingFront = false;
+    // 用來保存目前要顯示的資料
+    let currentCardData = {
+        name: "{{ card.name|default:"?" }}",
+        description: "{{ card.description|default:"?" }}",
+        advice: "{{ card.advice|default:"?" }}"
+    };
+
+    function toggleCard() {
+        const front = document.getElementById('cardFront');
+        const name = document.getElementById('cardName');
+        const description = document.getElementById('cardDescription');
+        const advice = document.getElementById('cardAdvice');
+
+        if (!showingFront) {
+            // 顯示正面 + 更新正面文字
+            front.classList.add('show');
+            name.textContent = currentCardData.name || "?";
+            description.textContent = currentCardData.description || "?";
+            advice.textContent = currentCardData.advice || "?";
+        } else {
+            // 隱藏正面 + 顯示問號
+            front.classList.remove('show');
+            name.textContent = "?";
+            description.textContent = "?";
+            advice.textContent = "?";
+
+            // 等卡片收回後再換新牌
+            setTimeout(() => {
+                fetchNewCard();
+            }, 800);
+        }
+
+        showingFront = !showingFront;
+    }
+
+    function fetchNewCard() {
+        fetch('{% url "draw_new_card" %}')
+            .then(response => response.json())
+            .then(data => {
+                const front = document.getElementById('cardFront');
+
+                // 換新卡片圖片
+                if (data.image_url) {
+                    front.style.backgroundImage = `url('${data.image_url}')`;
+                } else {
+                    front.style.backgroundImage = 'none';
+                }
+
+                // 暫存新卡片資料
+                currentCardData = {
+                    name: data.name || "?",
+                    description: data.description || "?",
+                    advice: data.advice || "?"
+                };
+            });
+    }
+</script>
+
+{% endblock %}

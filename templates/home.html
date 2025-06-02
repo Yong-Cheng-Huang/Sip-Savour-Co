@@ -35,7 +35,7 @@
                     {% endif %}
                     <div class="card-body text-center">
                         <h5 class="card-title">{{ product.name }}</h5>
-                        <p class="card-text">{{ product.description|truncatechars:45 }}</p>
+                        <p class="card-text">{{ product.description|truncatechars:30 }}</p>
                         <p class="text-primary fw-bold">$ {{ product.price }}</p>
                         {% if user.is_authenticated %}
                         <a href="{% url 'products:product_detail' product.pk %}" class="btn btn-outline-primary">查看詳情</a>
@@ -67,7 +67,11 @@
             <div class="card-body text-center">
               <h5 class="card-title">「元氣鬆餅」系列登場！</h5>
               <p class="card-text small">百種配料和果醬搭配上濃郁鬆餅<br>層層堆疊出濃濃幸福感。</p>
+              {% if user.is_authenticated %}
               <a href="/news" class="btn btn-outline-primary btn-sm">活動資訊</a>
+              {% else %}
+              <a href="{% url 'login' %}" class="btn btn-outline-primary btn-sm">活動資訊</a>
+              {% endif %}
             </div>
           </div>
         </div>
@@ -79,7 +83,11 @@
             <div class="card-body text-center">
               <h5 class="card-title">冷萃工藝・細品夏日</h5>
               <p class="card-text small">美好的早晨，從深焙咖啡開始。</p>
+              {% if user.is_authenticated %}
               <a href="/news" class="btn btn-outline-primary btn-sm">活動資訊</a>
+              {% else %}
+              <a href="{% url 'login' %}" class="btn btn-outline-primary btn-sm">活動資訊</a>
+              {% endif %}
             </div>
           </div>
         </div>
@@ -91,7 +99,11 @@
             <div class="card-body text-center">
               <h5 class="card-title">歡慶抹茶季</h5>
               <p class="card-text small">抹茶旋風來襲！享受飲品新體驗！</p>
+              {% if user.is_authenticated %}
               <a href="/news" class="btn btn-outline-primary btn-sm">活動資訊</a>
+              {% else %}
+              <a href="{% url 'login' %}" class="btn btn-outline-primary btn-sm">活動資訊</a>
+              {% endif %}
             </div>
           </div>
         </div>

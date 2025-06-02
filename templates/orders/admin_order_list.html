@@ -1,0 +1,152 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}訂單管理 - SipSavour{% endblock %}
+
+{% block content %}
+<style>
+    footer{
+        display: none;
+    }
+</style>
+
+<div class="container mt-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="text-decoration-none" href="/">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">訂單管理</li>
+        </ol>
+    </nav>
+
+    {% if messages %}
+    <div class="messages">
+        {% for message in messages %}
+        <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+            {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    <!-- 搜尋和篩選 -->
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <form method="get" class="d-flex gap-2">
+                <input type="text" name="search" class="form-control" placeholder="搜尋訂單編號、用戶名、姓名或電話" value="{{ search_query }}">
+                <button type="submit" class="btn btn-primary">搜尋</button>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <form method="get" class="d-flex gap-2">
+                <select name="status" class="form-select" onchange="this.form.submit()">
+                    <option value="">所有狀態</option>
+                    {% for status_code, status_name in status_choices %}
+                    <option value="{{ status_code }}" {% if status_code == current_status %}selected{% endif %}>
+                        {{ status_name }}
+                    </option>
+                    {% endfor %}
+                </select>
+                {% if search_query %}
+                <input type="hidden" name="search" value="{{ search_query }}">
+                {% endif %}
+            </form>
+        </div>
+    </div>
+
+    <!-- 訂單列表 -->
+    <div class="table-responsive">
+        <table class="table table-hover align-middle">
+            <thead>
+                <tr>
+                    <th>訂單編號</th>
+                    <th>用戶</th>
+                    <th>訂購人</th>
+                    <th>電話</th>
+                    <th>訂單日期</th>
+                    <th>總金額</th>
+                    <th>狀態</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for order in orders %}
+                <tr>
+                    <td>
+                        <a href="{% url 'orders:order_detail' order.id %}" class="text-decoration-none text-dark">
+                            {{ order.order_number }}
+                        </a>
+                    </td>
+                    <td>{{ order.user.username }}</td>
+                    <td>{{ order.name }}</td>
+                    <td>{{ order.phone }}</td>
+                    <td>{{ order.created_at|date:"Y/m/d H:i" }}</td>
+                    <td>
+                        {% if order.discount_amount > 0 %}
+                        <div class="text-decoration-line-through text-muted">$ {{ order.total_price }}</div>
+                        <div class="text-danger">-$ {{ order.discount_amount }}</div>
+                        {% endif %}
+                        <div class="fw-bold">$ {{ order.final_price }}</div>
+                    </td>
+                    <td>
+                        <span class="badge {% if order.status == 'pending' %}bg-warning
+                                         {% elif order.status == 'confirmed' %}bg-info
+                                         {% elif order.status == 'processing' %}bg-primary
+                                         {% elif order.status == 'shipped' %}bg-info
+                                         {% elif order.status == 'delivered' %}bg-success
+                                         {% else %}bg-danger{% endif %}">
+                            {{ order.get_status_display }}
+                        </span>
+                    </td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" 
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                修改狀態
+                            </button>
+                            <ul class="dropdown-menu">
+                                {% for status_code, status_name in status_choices %}
+                                <li>
+                                    <form method="post" action="{% url 'orders:update_order_status' order.id %}" class="dropdown-item-form">
+                                        {% csrf_token %}
+                                        <input type="hidden" name="status" value="{{ status_code }}">
+                                        <button type="submit" class="dropdown-item {% if status_code == 'cancelled' %}text-danger{% endif %}">
+                                            {{ status_name }}
+                                        </button>
+                                    </form>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                {% empty %}
+                <tr>
+                    <td colspan="8" class="text-center py-4">
+                        <i class="fas fa-box-open fa-3x mb-3 text-muted"></i>
+                        <h5 class="text-muted">沒有找到符合條件的訂單</h5>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<style>
+    .dropdown-item-form {
+        margin: 0;
+        padding: 0;
+    }
+    .dropdown-item-form button {
+        width: 100%;
+        text-align: left;
+        border: none;
+        background: none;
+        padding: 0.5rem 1rem;
+    }
+    .dropdown-item-form button:hover {
+        font-weight: bold;
+    }
+</style>
+{% endblock %} 

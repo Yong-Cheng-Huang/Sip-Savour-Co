@@ -1,10 +1,11 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from django.contrib.auth.decorators import login_required
+from django.contrib.auth.decorators import login_required, user_passes_test
 from django.contrib import messages
 from cart.models import Cart
 from .models import Order, OrderItem
 from loyalty.models import Coupon, Profile
 from django.utils import timezone
+from django.db.models import Q
 
 # Create your views here.
 
@@ -112,7 +113,12 @@ def order_list(request):
 @login_required
 def order_detail(request, order_id):
     try:
-        order = Order.objects.get(id=order_id, user=request.user)
+        # 如果是管理員，可以查看所有訂單
+        if request.user.is_staff:
+            order = Order.objects.get(id=order_id)
+        else:
+            # 一般用戶只能查看自己的訂單
+            order = Order.objects.get(id=order_id, user=request.user)
         return render(request, 'orders/order_detail.html', {
             'order': order,
         })
@@ -143,3 +149,48 @@ def remove_coupon(request):
         request.session.pop('applied_coupon', None)
         messages.success(request, '優惠券已移除')
     return redirect('orders:checkout')
+
+@login_required
+@user_passes_test(lambda u: u.is_staff)
+def admin_order_list(request):
+    # 獲取所有訂單
+    orders = Order.objects.all().order_by('-created_at')
+    
+    # 搜尋功能
+    search_query = request.GET.get('search', '')
+    if search_query:
+        orders = orders.filter(
+            Q(order_number__icontains=search_query) |
+            Q(user__username__icontains=search_query) |
+            Q(name__icontains=search_query) |
+            Q(phone__icontains=search_query)
+        )
+    
+    # 狀態篩選
+    status_filter = request.GET.get('status', '')
+    if status_filter:
+        orders = orders.filter(status=status_filter)
+    
+    context = {
+        'orders': orders,
+        'status_choices': Order.STATUS_CHOICES,
+        'current_status': status_filter,
+        'search_query': search_query,
+    }
+    return render(request, 'orders/admin_order_list.html', context)
+
+@login_required
+@user_passes_test(lambda u: u.is_staff)
+def update_order_status(request, order_id):
+    if request.method == 'POST':
+        order = get_object_or_404(Order, id=order_id)
+        new_status = request.POST.get('status')
+        
+        if new_status in dict(Order.STATUS_CHOICES):
+            order.status = new_status
+            order.save()
+            messages.success(request, f'訂單 {order.order_number} 狀態已更新為 {order.get_status_display()}')
+        else:
+            messages.error(request, '無效的訂單狀態')
+            
+    return redirect('orders:admin_order_list')

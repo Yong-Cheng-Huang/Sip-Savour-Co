@@ -10,4 +10,6 @@ urlpatterns = [
     path('remove-coupon/', views.remove_coupon, name='remove_coupon'),
     path('orders/', views.order_list, name='order_list'),
     path('orders/<int:order_id>/', views.order_detail, name='order_detail'),
+    path('admin/orders/', views.admin_order_list, name='admin_order_list'),
+    path('admin/orders/<int:order_id>/update/', views.update_order_status, name='update_order_status'),
 ] 

@@ -133,12 +133,12 @@
 
 <script>
     let showingFront = false;
-    // 用來保存目前要顯示的資料
     let currentCardData = {
         name: "{{ card.name|default:"?" }}",
         description: "{{ card.description|default:"?" }}",
         advice: "{{ card.advice|default:"?" }}"
     };
+    let newCardData = null; // 儲存新抽到的卡，等待翻正面才更新
 
     function toggleCard() {
         const front = document.getElementById('cardFront');
@@ -147,22 +147,30 @@
         const advice = document.getElementById('cardAdvice');
 
         if (!showingFront) {
-            // 顯示正面 + 更新正面文字
+            // 翻到正面：更新圖片 + 文字
+            if (newCardData) {
+                // 有新牌才更新，不然用舊的
+                front.style.backgroundImage = `url('${newCardData.image_url}')`;
+                currentCardData = {
+                    name: newCardData.name || "?",
+                    description: newCardData.description || "?",
+                    advice: newCardData.advice || "?"
+                };
+                newCardData = null; // 用完清掉
+            }
             front.classList.add('show');
-            name.textContent = currentCardData.name || "?";
-            description.textContent = currentCardData.description || "?";
-            advice.textContent = currentCardData.advice || "?";
+            name.textContent = currentCardData.name;
+            description.textContent = currentCardData.description;
+            advice.textContent = currentCardData.advice;
         } else {
-            // 隱藏正面 + 顯示問號
+            // 翻回背面：改成 ?
             front.classList.remove('show');
             name.textContent = "?";
             description.textContent = "?";
             advice.textContent = "?";
 
-            // 等卡片收回後再換新牌
-            setTimeout(() => {
-                fetchNewCard();
-            }, 800);
+            // 翻回背面的時候，馬上先抓下一張新牌，但不急著更新
+            fetchNewCard();
         }
 
         showingFront = !showingFront;
@@ -172,20 +180,11 @@
         fetch('{% url "draw_new_card" %}')
             .then(response => response.json())
             .then(data => {
-                const front = document.getElementById('cardFront');
-
-                // 換新卡片圖片
-                if (data.image_url) {
-                    front.style.backgroundImage = `url('${data.image_url}')`;
-                } else {
-                    front.style.backgroundImage = 'none';
-                }
-
-                // 暫存新卡片資料
-                currentCardData = {
+                newCardData = {
                     name: data.name || "?",
                     description: data.description || "?",
-                    advice: data.advice || "?"
+                    advice: data.advice || "?",
+                    image_url: data.image_url || ""
                 };
             });
     }

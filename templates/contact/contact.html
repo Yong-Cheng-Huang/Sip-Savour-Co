@@ -9,10 +9,22 @@
   <div class="row g-4">
     <!-- 聯絡表單 -->
     <div class="col-lg-6">
-      <div class="card shadow-sm">
-        <div class="card-body p-4">
+    <div class="card shadow-sm">
+      <div class="card-body p-4">
+        {% if messages %}
+          {% for message in messages %}
+            {% if message.tags == 'success' %}
+              <!-- 成功訊息 -->
+              <div class="text-center">
+                <h3 class="mb-4">{{ message }}</h3>
+                <form method="GET" action="{% url 'contact:contact' %}">
+                  <button type="submit" class="btn btn-primary">再寄一封</button>
+                </form>
+              </div>
+            {% endif %}
+          {% endfor %}
+        {% else %}
           <h3 class="card-title mb-4">發送訊息</h3>
-          
           <form method="POST" action="{% url 'contact:contact' %}">
             {% csrf_token %}
             <div class="mb-3">
@@ -33,9 +45,13 @@
             </div>
             <button type="submit" class="btn btn-primary w-100">發送訊息</button>
           </form>
-        </div>
+        {% endif %}
       </div>
     </div>
+  </div>
+
+
+
 
     <!-- 聯絡資訊 -->
     <div class="col-lg-6">

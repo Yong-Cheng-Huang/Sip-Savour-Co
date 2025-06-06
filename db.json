@@ -1,0 +1,4232 @@
+[
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2025-05-10T05:33:28.425Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Test",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2025-05-10T05:51:21.309Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Test",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u4e3b\\u98df\\u5206\\u985e\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2025-05-10T05:51:41.739Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Test",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u7a2e\\u985e\", \"\\u4e3b\\u98df\\u5206\\u985e\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2025-05-10T06:02:43.563Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Test",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2025-05-10T06:33:34.118Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Greek salad",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2025-05-10T06:35:30.303Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Greek salad",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2025-05-10T06:37:21.392Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "Jar Ice Cream",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2025-05-10T06:38:26.982Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Greek salad",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u5206\\u985e\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2025-05-10T06:44:57.974Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "Jar Ice Cream",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2025-05-10T06:53:49.480Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "3",
+        "object_repr": "沙拉",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5206\\u985e\\u540d\\u7a31\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2025-05-10T06:54:08.361Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "7",
+        "object_repr": "甜點",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5206\\u985e\\u540d\\u7a31\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2025-05-10T06:54:16.048Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "6",
+        "object_repr": "三明治",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5206\\u985e\\u540d\\u7a31\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2025-05-10T06:54:24.244Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "蛋糕",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5206\\u985e\\u540d\\u7a31\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2025-05-10T06:54:41.645Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "2",
+        "object_repr": "飲品",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5206\\u985e\\u540d\\u7a31\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2025-05-10T06:54:59.155Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "5",
+        "object_repr": "捲類",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5206\\u985e\\u540d\\u7a31\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2025-05-10T06:55:45.514Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "8",
+        "object_repr": "義大利麵",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2025-05-10T06:56:04.657Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Greek salad",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2025-05-10T06:56:07.256Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "Jar Ice Cream",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2025-05-10T06:56:35.051Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "希臘沙拉",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2025-05-10T06:56:51.448Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "蔬菜沙拉",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2025-05-10T06:57:11.967Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "5",
+        "object_repr": "苜蓿沙拉",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2025-05-10T06:58:15.584Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "6",
+        "object_repr": "雞肉沙拉",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2025-05-10T06:58:22.003Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "5",
+        "object_repr": "苜蓿沙拉",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u63cf\\u8ff0\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2025-05-10T06:58:24.674Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "希臘沙拉",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u63cf\\u8ff0\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2025-05-10T06:58:28.900Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "蔬菜沙拉",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u63cf\\u8ff0\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2025-05-10T06:59:16.890Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "7",
+        "object_repr": "千層麵捲",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2025-05-10T06:59:31.527Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "8",
+        "object_repr": "辣味捲",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2025-05-10T07:00:06.868Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "9",
+        "object_repr": "雞肉捲",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2025-05-10T07:00:17.541Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "8",
+        "object_repr": "辣味捲",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u5716\\u7247\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2025-05-10T07:00:38.808Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "10",
+        "object_repr": "蔬菜捲",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2025-05-10T07:01:19.892Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "11",
+        "object_repr": "漩渦冰淇淋",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2025-05-10T07:01:39.188Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "12",
+        "object_repr": "水果冰淇淋",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2025-05-10T07:02:08.458Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "13",
+        "object_repr": "罐裝冰淇淋",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2025-05-10T07:02:27.171Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "14",
+        "object_repr": "香草冰淇淋",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2025-05-10T07:02:45.552Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "15",
+        "object_repr": "雞肉三明治",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2025-05-10T07:03:07.757Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "16",
+        "object_repr": "純素三明治",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2025-05-10T07:03:29.019Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "17",
+        "object_repr": "烤三明治",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2025-05-10T07:03:51.188Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "18",
+        "object_repr": "吐司三明治",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2025-05-10T07:04:05.336Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "19",
+        "object_repr": "杯子蛋糕",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2025-05-10T07:04:39.002Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "20",
+        "object_repr": "純素蛋糕",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2025-05-10T07:05:02.688Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "21",
+        "object_repr": "奶油糖蛋糕",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2025-05-10T07:05:22.001Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "22",
+        "object_repr": "切片蛋糕",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2025-05-10T07:05:57.536Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "9",
+        "object_repr": "純素",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2025-05-10T07:06:35.772Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "23",
+        "object_repr": "蒜香蘑菇",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2025-05-10T07:07:15.990Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "24",
+        "object_repr": "炸花椰菜",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+        "action_time": "2025-05-10T07:08:15.461Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "25",
+        "object_repr": "蔬菜炊飯",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+        "action_time": "2025-05-10T07:08:39.902Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "26",
+        "object_repr": "櫛瓜炒飯",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+        "action_time": "2025-05-10T07:09:05.316Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "27",
+        "object_repr": "起司義大利麵",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+        "action_time": "2025-05-10T07:09:28.157Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "28",
+        "object_repr": "番茄義大利麵",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+        "action_time": "2025-05-10T07:09:45.847Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "29",
+        "object_repr": "奶油義大利麵\"",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+        "action_time": "2025-05-10T07:09:51.499Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "29",
+        "object_repr": "奶油義大利麵",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+        "action_time": "2025-05-10T07:10:12.793Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "30",
+        "object_repr": "雞肉義大利麵",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+        "action_time": "2025-05-10T07:10:43.822Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "4",
+        "object_repr": "麵食",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5206\\u985e\\u540d\\u7a31\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+        "action_time": "2025-05-10T07:11:12.746Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "31",
+        "object_repr": "奶油麵",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+        "action_time": "2025-05-10T07:11:34.428Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "32",
+        "object_repr": "蔬菜麵",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+        "action_time": "2025-05-10T07:11:52.908Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "33",
+        "object_repr": "素麵",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+        "action_time": "2025-05-10T07:12:09.222Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "34",
+        "object_repr": "炒麵",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+        "action_time": "2025-05-10T07:13:16.726Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "蔬菜沙拉",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u5716\\u7247\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+        "action_time": "2025-05-10T07:13:41.563Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "19",
+        "object_repr": "杯子蛋糕",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u5716\\u7247\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+        "action_time": "2025-05-10T07:34:43.035Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "34",
+        "object_repr": "炒麵",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+        "action_time": "2025-05-10T13:19:42.601Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "34",
+        "object_repr": "炒麵",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+        "action_time": "2025-05-10T13:19:47.671Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "32",
+        "object_repr": "蔬菜麵",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u7cbe\\u9078\\u5546\\u54c1\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+        "action_time": "2025-05-10T13:19:51.598Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "22",
+        "object_repr": "切片蛋糕",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u7cbe\\u9078\\u5546\\u54c1\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+        "action_time": "2025-05-10T13:20:08.692Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "34",
+        "object_repr": "炒麵",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+        "action_time": "2025-05-10T13:20:11.722Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "33",
+        "object_repr": "素麵",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+        "action_time": "2025-05-10T13:20:15.416Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "32",
+        "object_repr": "蔬菜麵",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+        "action_time": "2025-05-10T13:20:49.843Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "34",
+        "object_repr": "炒麵",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+        "action_time": "2025-05-10T13:20:52.623Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "33",
+        "object_repr": "素麵",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+        "action_time": "2025-05-10T13:20:56.959Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "32",
+        "object_repr": "蔬菜麵",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+        "action_time": "2025-05-10T13:20:59.834Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "31",
+        "object_repr": "奶油麵",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+        "action_time": "2025-05-10T13:21:02.845Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "30",
+        "object_repr": "雞肉義大利麵",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+        "action_time": "2025-05-10T13:23:45.721Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "27",
+        "object_repr": "起司義大利麵",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u7cbe\\u9078\\u5546\\u54c1\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 73,
+    "fields": {
+        "action_time": "2025-05-10T13:29:50.625Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "35",
+        "object_repr": "經典拉花拿鐵",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 74,
+    "fields": {
+        "action_time": "2025-05-10T13:30:41.759Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "36",
+        "object_repr": "清逸茗茶",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 75,
+    "fields": {
+        "action_time": "2025-05-10T13:31:19.143Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "37",
+        "object_repr": "夏日酷爽特調",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 76,
+    "fields": {
+        "action_time": "2025-05-10T13:32:49.495Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "38",
+        "object_repr": "鄉村檸檬特調",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 77,
+    "fields": {
+        "action_time": "2025-05-10T13:33:12.392Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "39",
+        "object_repr": "原萃草本茶",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 78,
+    "fields": {
+        "action_time": "2025-05-10T13:33:31.112Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "40",
+        "object_repr": "活力青檸特調",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 79,
+    "fields": {
+        "action_time": "2025-05-10T13:42:32.591Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "40",
+        "object_repr": "活力青檸特調",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 80,
+    "fields": {
+        "action_time": "2025-05-10T13:42:48.839Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "40",
+        "object_repr": "活力青檸特調",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u5716\\u7247\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 81,
+    "fields": {
+        "action_time": "2025-05-10T13:42:52.801Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "40",
+        "object_repr": "活力青檸特調",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 82,
+    "fields": {
+        "action_time": "2025-05-10T13:42:59.492Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "39",
+        "object_repr": "原萃草本茶",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u5716\\u7247\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 83,
+    "fields": {
+        "action_time": "2025-05-10T13:43:05.051Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "38",
+        "object_repr": "鄉村檸檬特調",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u5716\\u7247\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 84,
+    "fields": {
+        "action_time": "2025-05-10T13:43:11.551Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "37",
+        "object_repr": "夏日酷爽特調",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u5716\\u7247\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 85,
+    "fields": {
+        "action_time": "2025-05-10T13:43:22.078Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "37",
+        "object_repr": "夏日酷爽特調",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u5716\\u7247\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 86,
+    "fields": {
+        "action_time": "2025-05-10T13:43:26.858Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "37",
+        "object_repr": "夏日酷爽特調",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 87,
+    "fields": {
+        "action_time": "2025-05-10T13:43:38.070Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "36",
+        "object_repr": "清逸茗茶",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u5716\\u7247\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 88,
+    "fields": {
+        "action_time": "2025-05-10T13:43:46.744Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "35",
+        "object_repr": "經典拉花拿鐵",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u5716\\u7247\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 89,
+    "fields": {
+        "action_time": "2025-05-10T13:49:37.372Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "35",
+        "object_repr": "經典拉花拿鐵",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u5716\\u7247\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 90,
+    "fields": {
+        "action_time": "2025-05-10T13:52:01.948Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "36",
+        "object_repr": "清逸茗茶",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u5716\\u7247\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 91,
+    "fields": {
+        "action_time": "2025-05-10T13:55:12.388Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "38",
+        "object_repr": "鄉村檸檬特調",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 92,
+    "fields": {
+        "action_time": "2025-05-10T13:55:16.963Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "39",
+        "object_repr": "原萃草本茶",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 93,
+    "fields": {
+        "action_time": "2025-05-10T13:57:07.104Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "35",
+        "object_repr": "經典拉花拿鐵",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u5716\\u7247\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 94,
+    "fields": {
+        "action_time": "2025-05-10T13:57:37.227Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "40",
+        "object_repr": "活力青檸特調",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u5716\\u7247\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 95,
+    "fields": {
+        "action_time": "2025-05-10T13:58:10.930Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "37",
+        "object_repr": "夏日酷爽特調",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 96,
+    "fields": {
+        "action_time": "2025-05-10T13:58:17.580Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "37",
+        "object_repr": "夏日酷爽特調",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 97,
+    "fields": {
+        "action_time": "2025-05-10T13:58:31.106Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "37",
+        "object_repr": "活力青檸特調",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 98,
+    "fields": {
+        "action_time": "2025-05-10T13:58:39.668Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "37",
+        "object_repr": "夏日酷爽特調",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 99,
+    "fields": {
+        "action_time": "2025-05-10T13:58:52.297Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "40",
+        "object_repr": "活力青檸特調",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 100,
+    "fields": {
+        "action_time": "2025-05-10T13:58:59.314Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "37",
+        "object_repr": "夏日酷爽特調活力青檸特調",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 101,
+    "fields": {
+        "action_time": "2025-05-10T13:59:03.565Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "40",
+        "object_repr": "夏日酷爽特調",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 102,
+    "fields": {
+        "action_time": "2025-05-10T13:59:08.707Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "37",
+        "object_repr": "活力青檸特調",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 103,
+    "fields": {
+        "action_time": "2025-05-10T14:03:56.916Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "3",
+        "object_repr": "沙拉",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 104,
+    "fields": {
+        "action_time": "2025-05-10T14:04:04.772Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "6",
+        "object_repr": "三明治",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u6392\\u5e8f\\u9806\\u5e8f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 105,
+    "fields": {
+        "action_time": "2025-05-10T14:04:09.948Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "5",
+        "object_repr": "捲類",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u6392\\u5e8f\\u9806\\u5e8f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 106,
+    "fields": {
+        "action_time": "2025-05-10T14:04:28.412Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "4",
+        "object_repr": "麵食",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u6392\\u5e8f\\u9806\\u5e8f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 107,
+    "fields": {
+        "action_time": "2025-05-10T14:04:37.106Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "8",
+        "object_repr": "義大利麵",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u6392\\u5e8f\\u9806\\u5e8f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 108,
+    "fields": {
+        "action_time": "2025-05-10T14:04:47.345Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "9",
+        "object_repr": "純素",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u6392\\u5e8f\\u9806\\u5e8f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 109,
+    "fields": {
+        "action_time": "2025-05-10T14:05:06.155Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "蛋糕",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u6392\\u5e8f\\u9806\\u5e8f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 110,
+    "fields": {
+        "action_time": "2025-05-10T14:05:11.766Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "7",
+        "object_repr": "甜點",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u6392\\u5e8f\\u9806\\u5e8f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 111,
+    "fields": {
+        "action_time": "2025-05-10T14:05:17.594Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "2",
+        "object_repr": "飲品",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u6392\\u5e8f\\u9806\\u5e8f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 112,
+    "fields": {
+        "action_time": "2025-05-10T14:59:13.092Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "32",
+        "object_repr": "蔬菜麵",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u65b0\\u4e0a\\u5e02\\u5546\\u54c1\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 113,
+    "fields": {
+        "action_time": "2025-05-10T15:38:02.061Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "5",
+        "object_repr": "捲餅",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5206\\u985e\\u540d\\u7a31\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 114,
+    "fields": {
+        "action_time": "2025-05-10T15:48:15.573Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "32",
+        "object_repr": "蔬菜麵",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u7cbe\\u9078\\u5546\\u54c1\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 115,
+    "fields": {
+        "action_time": "2025-05-10T15:48:18.904Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "27",
+        "object_repr": "起司義大利麵",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u7cbe\\u9078\\u5546\\u54c1\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 116,
+    "fields": {
+        "action_time": "2025-05-10T15:48:22.138Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "22",
+        "object_repr": "切片蛋糕",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u7cbe\\u9078\\u5546\\u54c1\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 117,
+    "fields": {
+        "action_time": "2025-05-10T15:48:34.478Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "32",
+        "object_repr": "蔬菜麵",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u65b0\\u4e0a\\u5e02\\u5546\\u54c1\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 118,
+    "fields": {
+        "action_time": "2025-05-10T15:49:10.517Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "16",
+        "object_repr": "純素三明治",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u7cbe\\u9078\\u5546\\u54c1\", \"\\u65b0\\u4e0a\\u5e02\\u5546\\u54c1\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 119,
+    "fields": {
+        "action_time": "2025-05-10T15:49:31.183Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "8",
+        "object_repr": "辣味捲",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u7cbe\\u9078\\u5546\\u54c1\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 120,
+    "fields": {
+        "action_time": "2025-05-10T15:50:33.032Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "21",
+        "object_repr": "奶油糖蛋糕",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u7cbe\\u9078\\u5546\\u54c1\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 121,
+    "fields": {
+        "action_time": "2025-05-28T02:19:06.187Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "16",
+        "object_repr": "純素三明治",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u63cf\\u8ff0\", \"\\u5546\\u54c1\\u6210\\u5206\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 122,
+    "fields": {
+        "action_time": "2025-05-28T02:19:34.841Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "16",
+        "object_repr": "純素三明治",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 123,
+    "fields": {
+        "action_time": "2025-05-28T02:20:08.442Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "16",
+        "object_repr": "純素三明治",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 124,
+    "fields": {
+        "action_time": "2025-05-28T02:28:53.763Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "希臘沙拉",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u63cf\\u8ff0\", \"\\u5546\\u54c1\\u6210\\u5206\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 125,
+    "fields": {
+        "action_time": "2025-05-28T02:33:27.519Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "5",
+        "object_repr": "紅菊苣核桃藍紋起司沙拉",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\", \"\\u5546\\u54c1\\u63cf\\u8ff0\", \"\\u5546\\u54c1\\u6210\\u5206\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 126,
+    "fields": {
+        "action_time": "2025-05-28T02:33:30.034Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "5",
+        "object_repr": "紅菊苣核桃藍紋起司沙拉",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 127,
+    "fields": {
+        "action_time": "2025-05-28T02:33:48.263Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "綠蘆筍花盤佐蛋黃醬",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 128,
+    "fields": {
+        "action_time": "2025-05-28T02:34:12.320Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "16",
+        "object_repr": "培根生菜番茄三明治",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 129,
+    "fields": {
+        "action_time": "2025-05-28T02:34:20.849Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "16",
+        "object_repr": "培根生菜番茄三明治",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 130,
+    "fields": {
+        "action_time": "2025-05-28T02:35:16.115Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "柴魚胡麻風味和風沙拉",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\", \"\\u5546\\u54c1\\u63cf\\u8ff0\", \"\\u5546\\u54c1\\u6210\\u5206\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 131,
+    "fields": {
+        "action_time": "2025-05-28T02:35:19.099Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "柴魚胡麻風味和風沙拉",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 132,
+    "fields": {
+        "action_time": "2025-05-28T02:37:14.891Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "6",
+        "object_repr": "炙烤哈羅米起司蔬菜沙拉",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\", \"\\u5546\\u54c1\\u63cf\\u8ff0\", \"\\u5546\\u54c1\\u6210\\u5206\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 133,
+    "fields": {
+        "action_time": "2025-05-28T02:38:56.264Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "18",
+        "object_repr": "越南經典法棍三明治（Bánh Mì）",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\", \"\\u5546\\u54c1\\u63cf\\u8ff0\", \"\\u5546\\u54c1\\u6210\\u5206\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 134,
+    "fields": {
+        "action_time": "2025-05-28T02:39:51.430Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "17",
+        "object_repr": "田園蔬菜鷹嘴豆沙拉三明治",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\", \"\\u5546\\u54c1\\u63cf\\u8ff0\", \"\\u5546\\u54c1\\u6210\\u5206\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 135,
+    "fields": {
+        "action_time": "2025-05-28T02:41:37.667Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "15",
+        "object_repr": "酪梨培根三明治佐香煎馬鈴薯",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\", \"\\u5546\\u54c1\\u63cf\\u8ff0\", \"\\u5546\\u54c1\\u6210\\u5206\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 136,
+    "fields": {
+        "action_time": "2025-05-28T02:44:00.233Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "7",
+        "object_repr": "白醬菠菜乳酪義式捲麵",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\", \"\\u5546\\u54c1\\u63cf\\u8ff0\", \"\\u5546\\u54c1\\u6210\\u5206\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 137,
+    "fields": {
+        "action_time": "2025-05-28T02:46:38.588Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "10",
+        "object_repr": "義式焗烤起司肉醬捲",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\", \"\\u5546\\u54c1\\u63cf\\u8ff0\", \"\\u5546\\u54c1\\u6210\\u5206\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 138,
+    "fields": {
+        "action_time": "2025-05-28T02:50:17.504Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "8",
+        "object_repr": "印度香料奶油雞捲餅",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\", \"\\u5546\\u54c1\\u63cf\\u8ff0\", \"\\u5546\\u54c1\\u6210\\u5206\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 139,
+    "fields": {
+        "action_time": "2025-05-28T02:55:28.806Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "9",
+        "object_repr": "墨西哥香烤雞肉捲",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\", \"\\u5546\\u54c1\\u63cf\\u8ff0\", \"\\u5546\\u54c1\\u6210\\u5206\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 140,
+    "fields": {
+        "action_time": "2025-05-28T02:56:20.771Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "31",
+        "object_repr": "帕瑪森菠菜奶油培根義大利麵",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\", \"\\u5546\\u54c1\\u63cf\\u8ff0\", \"\\u5546\\u54c1\\u6210\\u5206\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 141,
+    "fields": {
+        "action_time": "2025-05-28T02:57:22.878Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "34",
+        "object_repr": "越南家常牛肉河粉",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\", \"\\u5546\\u54c1\\u63cf\\u8ff0\", \"\\u5546\\u54c1\\u6210\\u5206\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 142,
+    "fields": {
+        "action_time": "2025-05-28T02:58:30.810Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "33",
+        "object_repr": "地中海海鮮番茄義大利麵",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\", \"\\u5546\\u54c1\\u63cf\\u8ff0\", \"\\u5546\\u54c1\\u6210\\u5206\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 143,
+    "fields": {
+        "action_time": "2025-05-28T02:59:47.487Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "32",
+        "object_repr": "蔬菜麵",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u63cf\\u8ff0\", \"\\u5546\\u54c1\\u6210\\u5206\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 144,
+    "fields": {
+        "action_time": "2025-05-28T03:00:59.285Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "32",
+        "object_repr": "經典義式番茄義大利麵",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 145,
+    "fields": {
+        "action_time": "2025-05-28T03:02:46.270Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "29",
+        "object_repr": "奶油雞肉白醬寬扁麵",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\", \"\\u5546\\u54c1\\u63cf\\u8ff0\", \"\\u5546\\u54c1\\u6210\\u5206\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 146,
+    "fields": {
+        "action_time": "2025-05-28T03:03:45.612Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "28",
+        "object_repr": "義式番茄羅勒螺旋麵",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\", \"\\u5546\\u54c1\\u63cf\\u8ff0\", \"\\u5546\\u54c1\\u6210\\u5206\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 147,
+    "fields": {
+        "action_time": "2025-05-28T03:21:44.362Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "27",
+        "object_repr": "焗烤火腿奶油筆管麵",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\", \"\\u5546\\u54c1\\u63cf\\u8ff0\", \"\\u5546\\u54c1\\u6210\\u5206\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 148,
+    "fields": {
+        "action_time": "2025-05-28T03:23:12.588Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "30",
+        "object_repr": "奶油太陽乾番茄雞肉義大利麵",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\", \"\\u5546\\u54c1\\u63cf\\u8ff0\", \"\\u5546\\u54c1\\u6210\\u5206\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 149,
+    "fields": {
+        "action_time": "2025-05-28T03:24:31.460Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "26",
+        "object_repr": "清炒蔬菜糙米佐溏心蛋",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\", \"\\u5546\\u54c1\\u63cf\\u8ff0\", \"\\u5546\\u54c1\\u6210\\u5206\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 150,
+    "fields": {
+        "action_time": "2025-05-28T03:25:41.372Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "24",
+        "object_repr": "香烤花椰菜鷹嘴豆石榴沙拉",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\", \"\\u5546\\u54c1\\u63cf\\u8ff0\", \"\\u5546\\u54c1\\u6210\\u5206\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 151,
+    "fields": {
+        "action_time": "2025-05-28T03:33:04.311Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "23",
+        "object_repr": "地中海風烤茄子藜麥碗",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\", \"\\u5546\\u54c1\\u63cf\\u8ff0\", \"\\u5546\\u54c1\\u6210\\u5206\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 152,
+    "fields": {
+        "action_time": "2025-05-28T03:33:55.074Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "25",
+        "object_repr": "經典凱薩沙拉佐帕瑪森起司",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\", \"\\u5546\\u54c1\\u63cf\\u8ff0\", \"\\u5546\\u54c1\\u6210\\u5206\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 153,
+    "fields": {
+        "action_time": "2025-05-28T03:34:55.717Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "22",
+        "object_repr": "芒果慕斯乳酪蛋糕",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\", \"\\u5546\\u54c1\\u63cf\\u8ff0\", \"\\u5546\\u54c1\\u6210\\u5206\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 154,
+    "fields": {
+        "action_time": "2025-05-28T03:36:58.663Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "21",
+        "object_repr": "莓果雲朵鮮奶油蛋糕",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\", \"\\u5546\\u54c1\\u63cf\\u8ff0\", \"\\u5546\\u54c1\\u6210\\u5206\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 155,
+    "fields": {
+        "action_time": "2025-05-28T03:38:23.198Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "19",
+        "object_repr": "櫻桃雲霜杯子蛋糕",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\", \"\\u5546\\u54c1\\u63cf\\u8ff0\", \"\\u5546\\u54c1\\u6210\\u5206\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 156,
+    "fields": {
+        "action_time": "2025-05-28T03:39:19.992Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "20",
+        "object_repr": "雙層草莓果凍乳酪蛋糕",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\", \"\\u5546\\u54c1\\u63cf\\u8ff0\", \"\\u5546\\u54c1\\u6210\\u5206\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 157,
+    "fields": {
+        "action_time": "2025-05-28T03:40:19.893Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "12",
+        "object_repr": "蜜桃奶油酥片佐香草冰淇淋",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\", \"\\u5546\\u54c1\\u63cf\\u8ff0\", \"\\u5546\\u54c1\\u6210\\u5206\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 158,
+    "fields": {
+        "action_time": "2025-05-28T03:41:09.248Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "11",
+        "object_repr": "覆盆子香草冰淇淋",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\", \"\\u5546\\u54c1\\u63cf\\u8ff0\", \"\\u5546\\u54c1\\u6210\\u5206\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 159,
+    "fields": {
+        "action_time": "2025-05-28T03:42:09.131Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "13",
+        "object_repr": "草莓果醬罐裝奶酪",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\", \"\\u5546\\u54c1\\u63cf\\u8ff0\", \"\\u5546\\u54c1\\u6210\\u5206\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 160,
+    "fields": {
+        "action_time": "2025-05-28T03:43:09.139Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "14",
+        "object_repr": "彩虹脆皮碗香草冰淇淋",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\", \"\\u5546\\u54c1\\u63cf\\u8ff0\", \"\\u5546\\u54c1\\u6210\\u5206\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 161,
+    "fields": {
+        "action_time": "2025-05-28T03:43:57.125Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "40",
+        "object_repr": "夏日柑橘莓果氣泡飲",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\", \"\\u5546\\u54c1\\u63cf\\u8ff0\", \"\\u5546\\u54c1\\u6210\\u5206\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 162,
+    "fields": {
+        "action_time": "2025-05-28T03:44:46.502Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "37",
+        "object_repr": "經典檸香琴通寧",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\", \"\\u5546\\u54c1\\u63cf\\u8ff0\", \"\\u5546\\u54c1\\u6210\\u5206\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 163,
+    "fields": {
+        "action_time": "2025-05-28T03:45:44.281Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "36",
+        "object_repr": "清逸茗茶",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u63cf\\u8ff0\", \"\\u5546\\u54c1\\u6210\\u5206\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 164,
+    "fields": {
+        "action_time": "2025-05-28T03:45:54.761Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "36",
+        "object_repr": "經典熱紅茶",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u540d\\u7a31\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 165,
+    "fields": {
+        "action_time": "2025-05-28T03:46:38.209Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "35",
+        "object_repr": "經典拉花拿鐵",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u63cf\\u8ff0\", \"\\u5546\\u54c1\\u6210\\u5206\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 166,
+    "fields": {
+        "action_time": "2025-05-31T09:59:36.613Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "2",
+        "object_repr": "Order ORD202505318FBLRF",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 167,
+    "fields": {
+        "action_time": "2025-05-31T09:59:49.770Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "2",
+        "object_repr": "Order ORD202505318FBLRF",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 168,
+    "fields": {
+        "action_time": "2025-05-31T12:46:31.371Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "5",
+        "object_repr": "Order ORD202505314DVGS0",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 169,
+    "fields": {
+        "action_time": "2025-05-31T12:49:03.674Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "5",
+        "object_repr": "Order ORD202505314DVGS0",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 170,
+    "fields": {
+        "action_time": "2025-05-31T12:49:07.954Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "4",
+        "object_repr": "Order ORD20250531T1ASY5",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 171,
+    "fields": {
+        "action_time": "2025-05-31T12:49:11.775Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "3",
+        "object_repr": "Order ORD20250531ISTPZP",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 172,
+    "fields": {
+        "action_time": "2025-05-31T12:49:15.410Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "2",
+        "object_repr": "Order ORD202505318FBLRF",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 173,
+    "fields": {
+        "action_time": "2025-05-31T12:49:19.193Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "Order ORD20250531TD9PTH",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 174,
+    "fields": {
+        "action_time": "2025-05-31T13:03:20.805Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "6",
+        "object_repr": "Order ORD20250531KJ6MCP",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 175,
+    "fields": {
+        "action_time": "2025-05-31T13:03:46.388Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "6",
+        "object_repr": "Order ORD20250531KJ6MCP",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 176,
+    "fields": {
+        "action_time": "2025-05-31T13:09:00.795Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "6",
+        "object_repr": "Order ORD20250531KJ6MCP",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 177,
+    "fields": {
+        "action_time": "2025-05-31T13:09:31.558Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "6",
+        "object_repr": "Order ORD20250531KJ6MCP",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 178,
+    "fields": {
+        "action_time": "2025-05-31T13:33:27.797Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "6",
+        "object_repr": "Order ORD20250531KJ6MCP",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 179,
+    "fields": {
+        "action_time": "2025-05-31T13:35:05.251Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "7",
+        "object_repr": "Order ORD202505312YT1BN",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 180,
+    "fields": {
+        "action_time": "2025-05-31T13:38:31.461Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "8",
+        "object_repr": "Order ORD20250531G8XTMV",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 181,
+    "fields": {
+        "action_time": "2025-05-31T13:41:42.979Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "8",
+        "object_repr": "Order ORD20250531G8XTMV",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 182,
+    "fields": {
+        "action_time": "2025-05-31T13:41:46.847Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "7",
+        "object_repr": "Order ORD202505312YT1BN",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 183,
+    "fields": {
+        "action_time": "2025-05-31T13:42:37.590Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "9",
+        "object_repr": "Order ORD20250531DE8V9Y",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 184,
+    "fields": {
+        "action_time": "2025-05-31T15:39:22.315Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "admin",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 185,
+    "fields": {
+        "action_time": "2025-05-31T15:48:50.097Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "admin",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Points\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 186,
+    "fields": {
+        "action_time": "2025-05-31T15:51:51.080Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "admin",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Points\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 187,
+    "fields": {
+        "action_time": "2025-05-31T15:52:21.718Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "3",
+        "object_repr": "Coupon object (3)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Expires at\", \"Is used\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 188,
+    "fields": {
+        "action_time": "2025-05-31T15:52:23.791Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "3",
+        "object_repr": "Coupon object (3)",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 189,
+    "fields": {
+        "action_time": "2025-05-31T15:52:28.030Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "2",
+        "object_repr": "Coupon object (2)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Expires at\", \"Is used\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 190,
+    "fields": {
+        "action_time": "2025-05-31T15:57:21.393Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "2",
+        "object_repr": "test001",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Phone\", \"Points\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 191,
+    "fields": {
+        "action_time": "2025-06-01T13:45:10.892Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "2",
+        "object_repr": "test001",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 192,
+    "fields": {
+        "action_time": "2025-06-01T13:45:15.342Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "admin",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Points\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 193,
+    "fields": {
+        "action_time": "2025-06-01T14:01:40.360Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "11",
+        "object_repr": "Order ORD20250601MI42ZP",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 194,
+    "fields": {
+        "action_time": "2025-06-01T14:01:44.996Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "10",
+        "object_repr": "Order ORD20250601H962UO",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 195,
+    "fields": {
+        "action_time": "2025-06-01T14:01:48.329Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "9",
+        "object_repr": "Order ORD20250531DE8V9Y",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 196,
+    "fields": {
+        "action_time": "2025-06-01T14:05:08.111Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "12",
+        "object_repr": "Order ORD20250601H9VY5F",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 197,
+    "fields": {
+        "action_time": "2025-06-01T14:09:39.617Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "admin",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Points\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 198,
+    "fields": {
+        "action_time": "2025-06-01T14:43:41.090Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "15",
+        "object_repr": "Order ORD20250601NWZ4I5",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 199,
+    "fields": {
+        "action_time": "2025-06-01T14:43:44.337Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "14",
+        "object_repr": "Order ORD20250601LJ0NGD",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 200,
+    "fields": {
+        "action_time": "2025-06-01T14:43:47.138Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "13",
+        "object_repr": "Order ORD20250601W8BFFI",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 201,
+    "fields": {
+        "action_time": "2025-06-01T14:43:51.107Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "12",
+        "object_repr": "Order ORD20250601H9VY5F",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 202,
+    "fields": {
+        "action_time": "2025-06-01T15:08:39.184Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "13",
+        "object_repr": "Coupon object (13)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 203,
+    "fields": {
+        "action_time": "2025-06-01T15:08:41.752Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "12",
+        "object_repr": "Coupon object (12)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 204,
+    "fields": {
+        "action_time": "2025-06-01T15:08:45.334Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "10",
+        "object_repr": "Coupon object (10)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 205,
+    "fields": {
+        "action_time": "2025-06-01T15:08:48.453Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "1",
+        "object_repr": "Coupon object (1)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 206,
+    "fields": {
+        "action_time": "2025-06-01T15:08:53.496Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "admin",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Points\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 207,
+    "fields": {
+        "action_time": "2025-06-01T15:09:04.410Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "3",
+        "object_repr": "test001",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 208,
+    "fields": {
+        "action_time": "2025-06-01T15:09:09.207Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "2",
+        "object_repr": "test",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 209,
+    "fields": {
+        "action_time": "2025-06-01T15:15:16.113Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "柴魚胡麻風味和風沙拉",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u65b0\\u4e0a\\u5e02\\u5546\\u54c1\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 210,
+    "fields": {
+        "action_time": "2025-06-01T15:15:22.444Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "31",
+        "object_repr": "帕瑪森菠菜奶油培根義大利麵",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u65b0\\u4e0a\\u5e02\\u5546\\u54c1\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 211,
+    "fields": {
+        "action_time": "2025-06-01T15:15:35.213Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "40",
+        "object_repr": "夏日柑橘莓果氣泡飲",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u65b0\\u4e0a\\u5e02\\u5546\\u54c1\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 212,
+    "fields": {
+        "action_time": "2025-06-01T15:19:43.372Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "17",
+        "object_repr": "Order ORD20250601RCAI7S",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 213,
+    "fields": {
+        "action_time": "2025-06-01T15:19:46.718Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "16",
+        "object_repr": "Order ORD202506019ZZ4SW",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 214,
+    "fields": {
+        "action_time": "2025-06-01T15:23:29.019Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "14",
+        "object_repr": "Coupon object (14)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Expires at\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 215,
+    "fields": {
+        "action_time": "2025-06-01T15:23:37.040Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "admin",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 216,
+    "fields": {
+        "action_time": "2025-06-01T15:23:41.188Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "3",
+        "object_repr": "YongCheng",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 217,
+    "fields": {
+        "action_time": "2025-06-01T15:23:44.203Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "admin",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Points\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 218,
+    "fields": {
+        "action_time": "2025-06-01T15:24:04.047Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "14",
+        "object_repr": "Coupon object (14)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 219,
+    "fields": {
+        "action_time": "2025-06-01T15:24:15.667Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "18",
+        "object_repr": "Order ORD202506013KFVQT",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 220,
+    "fields": {
+        "action_time": "2025-06-01T15:26:02.394Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "admin",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Points\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 221,
+    "fields": {
+        "action_time": "2025-06-01T15:26:16.600Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "19",
+        "object_repr": "Order ORD20250601E0FNLD",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 222,
+    "fields": {
+        "action_time": "2025-06-01T15:35:28.041Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "admin",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Points\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 223,
+    "fields": {
+        "action_time": "2025-06-01T15:35:34.453Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "20",
+        "object_repr": "Order ORD20250601JAMNVI",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 224,
+    "fields": {
+        "action_time": "2025-06-01T15:35:37.851Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "21",
+        "object_repr": "Order ORD20250601BW7N61",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 225,
+    "fields": {
+        "action_time": "2025-06-01T15:35:41.485Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "22",
+        "object_repr": "Order ORD20250601V8NPP3",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 226,
+    "fields": {
+        "action_time": "2025-06-01T15:36:05.426Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "15",
+        "object_repr": "Coupon object (15)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 227,
+    "fields": {
+        "action_time": "2025-06-02T11:35:24.635Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "27",
+        "object_repr": "Order ORD20250602U747YB",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 228,
+    "fields": {
+        "action_time": "2025-06-02T12:54:20.559Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "28",
+        "object_repr": "Order ORD202506028O6LEX",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 229,
+    "fields": {
+        "action_time": "2025-06-02T12:54:25.024Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "27",
+        "object_repr": "Order ORD20250602U747YB",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 230,
+    "fields": {
+        "action_time": "2025-06-02T12:54:28.509Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "26",
+        "object_repr": "Order ORD202506028D5DKT",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 231,
+    "fields": {
+        "action_time": "2025-06-02T12:54:32.192Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "25",
+        "object_repr": "Order ORD20250602CMII8T",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 232,
+    "fields": {
+        "action_time": "2025-06-02T12:54:35.224Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "24",
+        "object_repr": "Order ORD2025060158PEKU",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 233,
+    "fields": {
+        "action_time": "2025-06-02T12:54:38.977Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "23",
+        "object_repr": "Order ORD202506011OS9X5",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 234,
+    "fields": {
+        "action_time": "2025-06-02T13:13:06.754Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "29",
+        "object_repr": "Order ORD2025060223Q6TJ",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 235,
+    "fields": {
+        "action_time": "2025-06-03T03:54:33.763Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "admin",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Points\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 236,
+    "fields": {
+        "action_time": "2025-06-03T04:43:51.258Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "admin",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Points\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 237,
+    "fields": {
+        "action_time": "2025-06-03T04:44:10.759Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "19",
+        "object_repr": "Coupon object (19)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 238,
+    "fields": {
+        "action_time": "2025-06-03T04:44:20.061Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "17",
+        "object_repr": "Coupon object (17)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 239,
+    "fields": {
+        "action_time": "2025-06-03T04:44:22.962Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "16",
+        "object_repr": "Coupon object (16)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 240,
+    "fields": {
+        "action_time": "2025-06-03T05:31:11.887Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "33",
+        "object_repr": "Order ORD20250603V4FYK1",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 241,
+    "fields": {
+        "action_time": "2025-06-03T05:31:14.912Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "31",
+        "object_repr": "Order ORD20250603C21WNJ",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 242,
+    "fields": {
+        "action_time": "2025-06-03T05:31:18.153Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "32",
+        "object_repr": "Order ORD20250603VJ11RI",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 243,
+    "fields": {
+        "action_time": "2025-06-03T05:31:24.168Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "30",
+        "object_repr": "Order ORD20250602CNWCFZ",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 244,
+    "fields": {
+        "action_time": "2025-06-03T05:31:29.248Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "3",
+        "object_repr": "YongCheng",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 245,
+    "fields": {
+        "action_time": "2025-06-03T05:31:32.483Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "admin",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Points\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 246,
+    "fields": {
+        "action_time": "2025-06-03T05:31:36.180Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "20",
+        "object_repr": "Coupon object (20)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 247,
+    "fields": {
+        "action_time": "2025-06-03T05:31:38.881Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "18",
+        "object_repr": "Coupon object (18)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 248,
+    "fields": {
+        "action_time": "2025-06-03T05:31:43.118Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "4",
+        "object_repr": "Test - 2025-06-03 03:51",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 249,
+    "fields": {
+        "action_time": "2025-06-03T05:31:46.114Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "3",
+        "object_repr": "test001 - 2025-06-02 16:50",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 250,
+    "fields": {
+        "action_time": "2025-06-03T05:31:49.183Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "test001 - 2025-06-02 16:46",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 251,
+    "fields": {
+        "action_time": "2025-06-03T05:31:51.916Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "123 - 2025-06-02 11:30",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 252,
+    "fields": {
+        "action_time": "2025-06-03T05:32:02.567Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "4",
+        "object_repr": "Cart for YongCheng",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 253,
+    "fields": {
+        "action_time": "2025-06-03T05:32:11.017Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "1",
+        "object_repr": "Cart for admin",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 254,
+    "fields": {
+        "action_time": "2025-06-04T01:20:12.860Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "admin",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Points\"]}}]"
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$hYKreChXYaeZ4rdYowuXBY$ygt3XxA44mkNONUmG6sI7ZrMjOCfa3eyxt5cwnCDPAA=",
+        "last_login": "2025-06-03T05:30:57.877Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "admin@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2025-05-10T05:18:27.908Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$cKwnMpInerA99HtPMA63Sx$Ll9rCff9qRBI8KkdSQdhpO86EinovSK1sVdQCP/y88U=",
+        "last_login": "2025-06-02T13:06:30.673Z",
+        "is_superuser": false,
+        "username": "YongCheng",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-06-01T15:10:36.234Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "1gvvfms9ib395f3m9ivci2kpfs4i6sus",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAUBf-FtSFA7aV16b7fQOA-pGpoUtqV8d-VpAvdnpk5LxXivuWwV17DTOqirDr9binig0sDdI_ltmhcyrbOSTdFH7TqaSF-Xg_37yDHmlvdeQEzgtiz56FPYAQIDEpvBamz4lgQEJyhr-I8syQ_DmKEHEK06v0B8Aw4ng:1uLkIT:fbbMzJwQIgL9Mbz7MHfg9-3uskiioHLaY59mPRpNtfs",
+        "expire_date": "2025-06-15T15:08:25.656Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "1q0p2bziwo3bkmx11zthchbbymwq4dpe",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAUBf-FtSFA7aV16b7fQOA-pGpoUtqV8d-VpAvdnpk5LxXivuWwV17DTOqirDr9binig0sDdI_ltmhcyrbOSTdFH7TqaSF-Xg_37yDHmlvdeQEzgtiz56FPYAQIDEpvBamz4lgQEJyhr-I8syQ_DmKEHEK06v0B8Aw4ng:1uLkEP:CeZS138GB3MJKrq6BUvzc8Nq7c4CijcDXqaZUTWnLvU",
+        "expire_date": "2025-06-15T15:04:13.508Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "1scdblpmec17ma9idmljnavz2yt8pc23",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAUBf-FtSFA7aV16b7fQOA-pGpoUtqV8d-VpAvdnpk5LxXivuWwV17DTOqirDr9binig0sDdI_ltmhcyrbOSTdFH7TqaSF-Xg_37yDHmlvdeQEzgtiz56FPYAQIDEpvBamz4lgQEJyhr-I8syQ_DmKEHEK06v0B8Aw4ng:1uLjlJ:46d1m7YHVVUynl_pzZE6SlLreCd_7bGhGv7p6SuFYEk",
+        "expire_date": "2025-06-15T14:34:09.712Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "21jzplolmae1hczktfvbzlbyzn0v93pl",
+    "fields": {
+        "session_data": ".eJxVjEsOwiAUAO_C2hAov4dL9z0DeTxAqoYmpV0Z725IutDtzGTeLOCx13D0vIUlsSuT7PLLItIztyHSA9t95bS2fVsiHwk_befzmvLrdrZ_g4q9jq1U2RAmG0UuiFFbZwGMztqTQSO8NwCkhICibHIQJ-kUUJmKlZKA2OcL34w3gA:1uLLs4:Fa9jRxkJN30mK9oEF12hWT0v34jY7I8iMXs5rU0lOj8",
+        "expire_date": "2025-06-14T13:03:32.431Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "4lcygbuwf6hevw3xv75zaavil5oysob7",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSHDy4JL935DMzCDVA0kpV0Z_92QdKHbe865bzHjvpV577zOC4mLUOL0u0VMT64D0APrvcnU6rYuUQ5FHrTLWyN-XQ_376BgL6PWk1JkJsjWawC0PoPRNiiN7IDOLhmKljiwU97YEDKanBIQg2aFVny-wLc3ig:1uLLV1:3AeeLJ5O4WlgK7d8Z9zFNA_Jh7HqxCg1Ao_A0-wuX-U",
+        "expire_date": "2025-06-14T12:39:43.140Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "4smdced6cb0zaduajkdvzdxap3d31jh5",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hBghk7r0n3PQIChUjWQlHZlvLsh6UK3_73338L5Y8_uaGlzK4ur0OLyuwUfn6l0wA9f7lXGWvZtDbIr8qRNzpXT63a6fwfZt9xrPVAyXlkIwJbUZI2JY0TSyIYmQlwMD0HjAmgBlBqBdUzegEVNkcTnC7RoNnM:1uL2Dp:YKTm04G40N4VAeH9cAjl9s6cKr0epWSvmQ8fUtb4gsw",
+        "expire_date": "2025-06-13T16:04:41.102Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "6dn4tdvq71bk9ds5jdrzk94bhxe9l0by",
+    "fields": {
+        "session_data": ".eJxVjEsOwiAUAO_C2hAov4dL9z0DeTxAqoYmpV0Z725IutDtzGTeLOCx13D0vIUlsSuT7PLLItIztyHSA9t95bS2fVsiHwk_befzmvLrdrZ_g4q9jq1U2RAmG0UuiFFbZwGMztqTQSO8NwCkhICibHIQJ-kUUJmKlZKA2OcL34w3gA:1uLLww:uxkHrMI2CxR50NB8zX5ND9ShxGoF-Vtccrk3s-YPFKk",
+        "expire_date": "2025-06-14T13:08:34.926Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "6ibczf9f93a6o03axa8wv15o9m55pifv",
+    "fields": {
+        "session_data": ".eJxVjEsOwjAMBe-SNYqa1MEOS_Y9Q-XELimgVOpnhbg7VOoCtm9m3sv0vK2l3xad-1HMxThz-t0S54fWHcid622yearrPCa7K_agi-0m0ef1cP8OCi_lWwOjYOQg4B00LKgBzy6gG1KkmBpIqaUAniLKELMygPdKGR0pUWzN-wPOgjc2:1uM4nP:nU5rwPqVlv-klxzOE6Ekwt2BVKLwCPx3ow5dfGSuFXg",
+        "expire_date": "2025-06-16T13:01:43.911Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "6s1dvwg0u9l6g10tatm22lpsjqey2j2d",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2pCx0A64dN8zEJgZpGpoUtqV8e7apAvd_vfef6kQt7WErckSJlYX1anT75YiPaTugO-x3mZNc12XKeld0QdtepxZntfD_TsosZVvDQIMViw7BwN7cTF7S8yUxBjuEc6SGQEp4RCh95SNWHCYbYcoHtX7A_1hOEk:1uLHyp:6KzkDJW37hznF7nSNKlIJDY6WAFVVllkojqxebQbggo",
+        "expire_date": "2025-06-14T08:54:15.644Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "9ra37c08gh5y61m3x6h8kbolilqfhaem",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAURP-FtSG8EZfu_QZyLxekaiAp7cr477ZJF5rZzTkzbxZhXWpcR57jROzCJDv9dgjpmdsO6AHt3nnqbZkn5LvCDzr4rVN-XQ_376DCqNtanNEEtGWLNuiC9d5ZnU1wSlPGAEUVmUAI4xMpAUQ2CGW00kJJDJZ9vs1KNws:1uLdHm:eLOZlrN6565k3hr7USJwNdWphuCN0b60ARzFFOsdZws",
+        "expire_date": "2025-06-15T07:39:14.107Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "e18v3cr7tk83jc55384b07rqf9qx2nqe",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hBpQRiX7j0DGWYGqRqalHZlvLuSdKHb997_LxVxW0vcmixxYnVWRh1-WUJ6SO2C71hvs6a5rsuUdE_0bpu-zizPy97-HRRspa8DCAcr4h2BAR5JQvZIxmYzDhCGIwka_BKGDE5yEgfplDJ7Sxy8en8ADLM5Sw:1uFqJ4:26Phl36VVL5E2233BljGtf7sHgh3XzpjkHOurTAbbb4",
+        "expire_date": "2025-05-30T08:20:38.169Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "en0hyu9df8qp9fqv8rjm5uv3wk2ti2yq",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hBghk7r0n3PQIChUjWQlHZlvLsh6UK3_73338L5Y8_uaGlzK4ur0OLyuwUfn6l0wA9f7lXGWvZtDbIr8qRNzpXT63a6fwfZt9xrPVAyXlkIwJbUZI2JY0TSyIYmQlwMD0HjAmgBlBqBdUzegEVNkcTnC7RoNnM:1uL3ux:r6A5qMeSNgoJVNB7Lyl0IsZLI0wrMLx_TNygojam-Tg",
+        "expire_date": "2025-06-13T17:53:19.104Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ffrca5tribgf343zyysqllmivx52wkdr",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSFT6vBw6b7fQGAGpGogKe3K-O_apAvd3nPOfQkftrX4rafFzywuYhCn3y0GeqS6A76HemuSWl2XOcpdkQftcmqcntfD_TsooZdvHRiAyJqMqJU2yaAblVXZjWwSGCTMChw569ACjBQZSEcekka0Z4vi_QHJxjcA:1uKa3l:2KYrN7UyrJxRr152pbusOjv6mQjATUXcDIG3g4lvnfU",
+        "expire_date": "2025-06-12T10:00:25.119Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "jmv368dsbpei4hm2xpptu6ec6xlhmm8j",
+    "fields": {
+        "session_data": ".eJxVjEsOwiAUAO_C2hAov4dL9z0DeTxAqoYmpV0Z725IutDtzGTeLOCx13D0vIUlsSuT7PLLItIztyHSA9t95bS2fVsiHwk_befzmvLrdrZ_g4q9jq1U2RAmG0UuiFFbZwGMztqTQSO8NwCkhICibHIQJ-kUUJmKlZKA2OcL34w3gA:1uLLrk:Khh8TEY9LZ3Sa5dDYDRRMQlqoxNkzCMHtUkYuTreYTA",
+        "expire_date": "2025-06-14T13:03:12.459Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "krioxbmg1now1jdj1zjpnimrs6kilf7t",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGlm7ydreUNJzhmj9CQ4gW4qTCnF3iJQC2jcz76VG2dY8bi0t4xzVWaE6_W5ewiOVHcS7lFvVoZZ1mb3eFX3Qpq81puflcP8OsrT8rSfrmZOwARDpHXiyRCCpN8QdSECIHeOAiBaIovETRh8GsA5JmJ16fwDFgzbG:1uM881:zLBazzxYIydNsg5YrGECtyf0xFCH67hNajD4arm6Myo",
+        "expire_date": "2025-06-16T16:35:13.179Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "m543kkdra1srnazoe6n3ttryjru5mcg3",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQRO_iGlnxL96lpM8ZrPUPB5AtxUmFuDuJlAK60bw382aOtrW4rafFzZFdmWaX385TeKZ6gPigem88tLous-eHwk_a-dRiet1O9--gUC_7Wto8aiCE0WhUymsywe8hGJUQc_LeDAJMshGVGABsECQyZYskA5Bkny_LgTeN:1uLkmC:ZLiznZWyVRo3KretMSqBuODp3pjh0Av4Di7cjsWDw_A",
+        "expire_date": "2025-06-15T15:39:08.537Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "o0a3hgnb7ccunbsddk0ji4qiuoocwcpy",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAUBf-FtSFA7aV16b7fQOA-pGpoUtqV8d-VpAvdnpk5LxXivuWwV17DTOqirDr9binig0sDdI_ltmhcyrbOSTdFH7TqaSF-Xg_37yDHmlvdeQEzgtiz56FPYAQIDEpvBamz4lgQEJyhr-I8syQ_DmKEHEK06v0B8Aw4ng:1uLkFe:uU7UnRf5X9S-RogKIHcdiJSuNoxI8m8RexrqigjXqXU",
+        "expire_date": "2025-06-15T15:05:30.037Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "pd805ltw88jtkgamchr5w15egunj5k0k",
+    "fields": {
+        "session_data": ".eJxVjDsOwyAQBe9CHSH-a6dM7zOgZYHgJALJ2FWUu0dILpL2zcx7M4_HXvzR0-bXyK5MssvvFpCeqQ4QH1jvjVOr-7YGPhR-0s6XFtPrdrp_BwV7GbWTGfJstI3gtJZkwEWlgyQV0iQEzFlYRQBRJiuCncAgYdAGwGaZiH2-yh03cw:1uDdia:u7wEHyfCJzlAlvC9LTI-LIM1yWu1mBVvGU2C6l5RGDI",
+        "expire_date": "2025-05-24T06:29:52.262Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "prabc6mqqh0el62r7h4f73iev5mye7hp",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2pCZAqW6dN8zNDMwSNVAUtqV8e7apAvd_vfef6mJtjVPW5NlmqO6KKNOvxtTeEjZQbxTuVUdalmXmfWu6IM2PdYoz-vh_h1kavlbwxDAGuSujyDci0E628GTeJMsYHAuJfAgCdmGxJZcRMGOyVv0hkG9P9x3N90:1uLOac:7xAyy2wcRnbXt20p8UKCnz4Cx3l1jZmmp6eVQJvY6M0",
+        "expire_date": "2025-06-14T15:57:42.506Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ru1i56ew8gee0brz9qsyfptjlpde1f74",
+    "fields": {
+        "session_data": ".eJxVjDsOwyAQBe9CHSH-a6dM7zOgZYHgJALJ2FWUu0dILpL2zcx7M4_HXvzR0-bXyK5MssvvFpCeqQ4QH1jvjVOr-7YGPhR-0s6XFtPrdrp_BwV7GbWTGfJstI3gtJZkwEWlgyQV0iQEzFlYRQBRJiuCncAgYdAGwGaZiH2-yh03cw:1uDcbc:puYdiBL0w9WPL3UeyI2Wfqm4_qwGXakKiSvRMjzZGBg",
+        "expire_date": "2025-05-24T05:18:36.239Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "sf43rtirv9zkbk6645bkv9ybhhtqar6r",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSG0zBRw6d5vIMNjpGogKe3K-O_apAvd3nPOfQlP21r81vPi5yTOYhCn3y1QfOS6g3Snemsytrouc5C7Ig_a5bWl_Lwc7t9BoV6-NeoRCQ1GIGZAZ1OeLDA4Bm3AgkVIcdTKmoyMoNyI06CDImV4YADx_gC9nzac:1uMKEj:ejG09ipbeEuhRBX-LVC3y1MwB_mUDfelHlmLdybmIGE",
+        "expire_date": "2025-06-17T05:30:57.879Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "vpoq5iatu208bgy2yd11bvsbpz9umoig",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSHDy4JL935DMzCDVA0kpV0Z_92QdKHbe865bzHjvpV577zOC4mLUOL0u0VMT64D0APrvcnU6rYuUQ5FHrTLWyN-XQ_376BgL6PWk1JkJsjWawC0PoPRNiiN7IDOLhmKljiwU97YEDKanBIQg2aFVny-wLc3ig:1uLLbD:0JCO_ibSvZOEHyI4v7PiKbpft6hr-GAR2YBq7dOxvAc",
+        "expire_date": "2025-06-14T12:46:07.022Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "w6wzy5eqm6h3jfkyon60l0ju92d3os6d",
+    "fields": {
+        "session_data": ".eJxVjEsOwiAUAO_C2hAov4dL9z0DeTxAqoYmpV0Z725IutDtzGTeLOCx13D0vIUlsSuT7PLLItIztyHSA9t95bS2fVsiHwk_befzmvLrdrZ_g4q9jq1U2RAmG0UuiFFbZwGMztqTQSO8NwCkhICibHIQJ-kUUJmKlZKA2OcL34w3gA:1uLLwQ:5yk7IHz0nVzvcVvcwJlzYm5sgdy2ijiDk7pi7bYEAVE",
+        "expire_date": "2025-06-14T13:08:02.919Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ytwfza0h14no0zcp8x6otlp317qlej0u",
+    "fields": {
+        "session_data": ".eJxVjEsOwiAUAO_C2hAov4dL9z0DeTxAqoYmpV0Z725IutDtzGTeLOCx13D0vIUlsSuT7PLLItIztyHSA9t95bS2fVsiHwk_befzmvLrdrZ_g4q9jq1U2RAmG0UuiFFbZwGMztqTQSO8NwCkhICibHIQJ-kUUJmKlZKA2OcL34w3gA:1uLMkk:Eupr8g82qU4rmid90ZPjWxZ1I-Hy_WqdFLXbDqp6F64",
+        "expire_date": "2025-06-14T14:00:02.052Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "z36cnp6tokbhq7dsfxcoher5aepibjop",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAUBf-FtSFA7aV16b7fQOA-pGpoUtqV8d-VpAvdnpk5LxXivuWwV17DTOqirDr9binig0sDdI_ltmhcyrbOSTdFH7TqaSF-Xg_37yDHmlvdeQEzgtiz56FPYAQIDEpvBamz4lgQEJyhr-I8syQ_DmKEHEK06v0B8Aw4ng:1uLe2z:GtKVzZ9L5odbimjHvu0C6UCw6DI6-ibUWhHEwImIkM8",
+        "expire_date": "2025-06-15T08:28:01.114Z"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 1,
+    "fields": {
+        "name": "蛋糕",
+        "description": "",
+        "order": 6,
+        "created_at": "2025-05-10T06:08:43.269Z",
+        "updated_at": "2025-05-10T14:05:06.154Z"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 2,
+    "fields": {
+        "name": "飲品",
+        "description": "",
+        "order": 8,
+        "created_at": "2025-05-10T06:08:43.269Z",
+        "updated_at": "2025-05-10T14:05:17.593Z"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 3,
+    "fields": {
+        "name": "沙拉",
+        "description": "",
+        "order": 0,
+        "created_at": "2025-05-10T06:08:43.269Z",
+        "updated_at": "2025-05-10T14:03:56.914Z"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 4,
+    "fields": {
+        "name": "麵食",
+        "description": "",
+        "order": 3,
+        "created_at": "2025-05-10T06:08:43.269Z",
+        "updated_at": "2025-05-10T14:04:28.411Z"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 5,
+    "fields": {
+        "name": "捲餅",
+        "description": "",
+        "order": 2,
+        "created_at": "2025-05-10T06:08:43.269Z",
+        "updated_at": "2025-05-10T15:38:02.057Z"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 6,
+    "fields": {
+        "name": "三明治",
+        "description": "",
+        "order": 1,
+        "created_at": "2025-05-10T06:08:43.269Z",
+        "updated_at": "2025-05-10T14:04:04.770Z"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 7,
+    "fields": {
+        "name": "甜點",
+        "description": "",
+        "order": 7,
+        "created_at": "2025-05-10T06:08:43.269Z",
+        "updated_at": "2025-05-10T14:05:11.765Z"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 8,
+    "fields": {
+        "name": "義大利麵",
+        "description": "",
+        "order": 4,
+        "created_at": "2025-05-10T06:55:45.512Z",
+        "updated_at": "2025-05-10T14:04:37.105Z"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 9,
+    "fields": {
+        "name": "純素",
+        "description": "",
+        "order": 5,
+        "created_at": "2025-05-10T07:05:57.533Z",
+        "updated_at": "2025-05-10T14:04:47.344Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+        "name": "綠蘆筍花盤佐蛋黃醬",
+        "price": "12.00",
+        "category": 3,
+        "image": "products/1725205405201food_1_q18TARQ.png",
+        "description": "將新鮮脆口的綠蘆筍切片如花瓣般排列，中間點綴一顆濃郁蛋黃醬，風味層次分明。簡約中展現細膩，適合作為前菜或輕食享用。",
+        "ingredients": "蘆筍、蛋黃醬（蛋黃、植物油、檸檬汁）、黑胡椒、鹽",
+        "is_featured": false,
+        "is_new": false,
+        "created_at": "2025-05-10T06:56:35.050Z",
+        "updated_at": "2025-05-28T02:33:48.260Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+        "name": "柴魚胡麻風味和風沙拉",
+        "price": "18.00",
+        "category": 3,
+        "image": "products/1725205419539food_2.png",
+        "description": "融合日式風味與清爽口感，以多樣鮮綠生菜為基底，搭配酥脆柴魚片、胡麻醬與爽口蔬果，入口鮮香濃郁，層次分明。每一口都充滿自然與滋味的平衡。",
+        "ingredients": "綜合生菜（蘿蔓、奶油萵苣等）、柴魚片、胡麻醬（芝麻醬、醬油、糖、味醂）、小番茄、黃瓜、蘋果片（視當季食材調整）",
+        "is_featured": false,
+        "is_new": true,
+        "created_at": "2025-05-10T06:56:51.447Z",
+        "updated_at": "2025-06-01T15:15:16.111Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+        "name": "紅菊苣核桃藍紋起司沙拉",
+        "price": "16.00",
+        "category": 3,
+        "image": "products/1725205434060food_3.png",
+        "description": "以鮮紅的菊苣葉為主角，搭配香濃藍紋起司與烘烤核桃，再點綴清爽芝麻葉與簡單油醋醬，打造一款風味層次豐富、兼具視覺美感與營養的精緻沙拉。微苦、鹹香與堅果香完美交織，是開胃或佐酒的絕佳選擇。",
+        "ingredients": "紅菊苣、藍紋起司、核桃、芝麻葉、橄欖油、巴薩米克醋、黑胡椒、海鹽",
+        "is_featured": false,
+        "is_new": false,
+        "created_at": "2025-05-10T06:57:11.966Z",
+        "updated_at": "2025-05-28T02:33:30.029Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+        "name": "炙烤哈羅米起司蔬菜沙拉",
+        "price": "24.00",
+        "category": 3,
+        "image": "products/1725205448689food_4.png",
+        "description": "風味濃郁的哈羅米起司，炙烤至表面金黃微焦，搭配新鮮多彩的時蔬，如番茄、黃椒、小黃瓜與黑橄欖，最後點綴嫩綠豌豆苗，清爽中帶有濃郁奶香，是夏日人氣輕食首選！",
+        "ingredients": "哈羅米起司、番茄、黃椒、小黃瓜、黑橄欖、紅椒、豌豆苗、橄欖油、黑胡椒、海鹽",
+        "is_featured": false,
+        "is_new": false,
+        "created_at": "2025-05-10T06:58:15.583Z",
+        "updated_at": "2025-05-28T02:37:14.882Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 7,
+    "fields": {
+        "name": "白醬菠菜乳酪義式捲麵",
+        "price": "14.00",
+        "category": 5,
+        "image": "products/1725205480565food_5.png",
+        "description": "傳統千層麵優雅捲起，做成精緻小巧的義式捲麵，每一捲都包裹著香濃白醬、滑順乳酪與嫩煮菠菜，外層再覆上一層金黃焗烤起司，奶香四溢、口感濃郁。",
+        "ingredients": "義大利捲麵、白醬（奶油、牛奶、麵粉）、菠菜、瑞可達起司（Ricotta）、莫札瑞拉起司、帕瑪森起司、橄欖油、蒜末、鹽、黑胡椒",
+        "is_featured": false,
+        "is_new": false,
+        "created_at": "2025-05-10T06:59:16.888Z",
+        "updated_at": "2025-05-28T02:44:00.229Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 8,
+    "fields": {
+        "name": "印度香料奶油雞捲餅",
+        "price": "12.00",
+        "category": 5,
+        "image": "products/1725205497692food_6.png",
+        "description": "經典印度奶油雞（Butter Chicken）包進柔軟餅皮中，結合濃郁番茄奶油醬與香料醃製雞肉，每一口都是滿滿香氣與異國風味。搭配新鮮紅洋蔥與香菜平衡濃厚口感，是一款方便攜帶又超級過癮的異國輕食！",
+        "ingredients": "手工餅皮、奶油雞（雞胸肉、番茄醬、奶油、優格、蒜薑醬、印度香料如葛拉姆馬薩拉、孜然）、紅洋蔥、香菜、鹽、奶油",
+        "is_featured": true,
+        "is_new": false,
+        "created_at": "2025-05-10T06:59:31.526Z",
+        "updated_at": "2025-05-28T02:50:17.497Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 9,
+    "fields": {
+        "name": "墨西哥香烤雞肉捲",
+        "price": "20.00",
+        "category": 5,
+        "image": "products/1725205512792food_7.png",
+        "description": "嚴選香料醃製的嫩烤雞肉，搭配清爽蔬菜與特製醬料，包裹在金黃烘烤的餅皮中，外酥內鮮，口感層次豐富。適合快速飽足、外帶方便。",
+        "ingredients": "小麥餅皮、香料烤雞胸肉、青椒、紅椒、洋蔥、番茄、起司絲、墨西哥風味醬（如莎莎醬或辣味美乃滋）、橄欖油、鹽與黑胡椒",
+        "is_featured": false,
+        "is_new": false,
+        "created_at": "2025-05-10T07:00:06.867Z",
+        "updated_at": "2025-05-28T02:55:28.799Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 10,
+    "fields": {
+        "name": "義式焗烤起司肉醬捲",
+        "price": "15.00",
+        "category": 5,
+        "image": "products/1725205525342food_8.png",
+        "description": "外酥內軟，包裹濃郁番茄肉醬與多層起司，經烘烤後表面金黃酥香，撒上芝麻更添香氣。每一口都能感受到牽絲起司的奶香與肉醬的鹹香交融，是熱愛焗烤與義式風味的您絕對不能錯過的一品！",
+        "ingredients": "披薩麵團（麵粉、酵母、橄欖油）、番茄肉醬（絞肉、番茄醬、洋蔥、大蒜、義式香料）、莫札瑞拉起司、切達起司、帕瑪森起司、芝麻、歐芹碎",
+        "is_featured": false,
+        "is_new": false,
+        "created_at": "2025-05-10T07:00:38.806Z",
+        "updated_at": "2025-05-28T02:46:38.584Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 11,
+    "fields": {
+        "name": "覆盆子香草冰淇淋",
+        "price": "14.00",
+        "category": 7,
+        "image": "products/1725205548258food_9.png",
+        "description": "以香濃滑順的香草冰淇淋為基底，混入新鮮覆盆子果粒，酸甜交織、層次豐富。每一口都帶有天然果香與濃郁奶香。",
+        "ingredients": "鮮奶、鮮奶油、糖、蛋黃、香草籽、新鮮覆盆子或果醬",
+        "is_featured": false,
+        "is_new": false,
+        "created_at": "2025-05-10T07:01:19.891Z",
+        "updated_at": "2025-05-28T03:41:09.247Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 12,
+    "fields": {
+        "name": "蜜桃奶油酥片佐香草冰淇淋",
+        "price": "22.00",
+        "category": 7,
+        "image": "products/1725205562194food_10.png",
+        "description": "以香脆奶油酥片堆疊，搭配蜜漬黃桃球與柔滑香緹奶油，再佐一球濃郁香草冰淇淋，入口冰熱交融、香甜滑順。",
+        "ingredients": "香草冰淇淋（牛奶、鮮奶油、蛋黃、糖、香草籽）、酥皮餅乾片（千層酥皮、糖粉）、蜜桃球、蜜桃果醬、香緹奶油（鮮奶油、糖、香草）、薄荷葉（裝飾）",
+        "is_featured": false,
+        "is_new": false,
+        "created_at": "2025-05-10T07:01:39.186Z",
+        "updated_at": "2025-05-28T03:40:19.889Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 13,
+    "fields": {
+        "name": "草莓果醬罐裝奶酪",
+        "price": "10.00",
+        "category": 7,
+        "image": "products/1725205579671food_11_KXOUyxz.png",
+        "description": "以香濃鮮奶製成，口感滑嫩細緻，搭配新鮮草莓與果醬層層堆疊，酸甜適中、清爽不膩。",
+        "ingredients": "鮮奶、鮮奶油、糖、吉利丁、香草、草莓果醬、新鮮草莓、檸檬汁",
+        "is_featured": false,
+        "is_new": false,
+        "created_at": "2025-05-10T07:02:08.457Z",
+        "updated_at": "2025-05-28T03:42:09.127Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 14,
+    "fields": {
+        "name": "彩虹脆皮碗香草冰淇淋",
+        "price": "12.00",
+        "category": 7,
+        "image": "products/1725205599440food_12.png",
+        "description": "濃郁香草冰淇淋盛裝於彩色巧克力脆皮碗中，外層裹滿繽紛糖針，酥脆與綿密交織，甜而不膩，是視覺與味覺雙重享受。",
+        "ingredients": "香草冰淇淋（牛奶、鮮奶油、蛋黃、糖、香草）、白巧克力脆皮碗、彩色糖針、糖粉（裝飾）",
+        "is_featured": false,
+        "is_new": false,
+        "created_at": "2025-05-10T07:02:27.170Z",
+        "updated_at": "2025-05-28T03:43:09.139Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 15,
+    "fields": {
+        "name": "酪梨培根三明治佐香煎馬鈴薯",
+        "price": "12.00",
+        "category": 6,
+        "image": "products/1725205619068food_13.png",
+        "description": "柔軟吐司夾入滑順酪梨醬、酥脆培根、新鮮番茄與生菜，每一口都是完美層次。搭配一旁金黃香煎的馬鈴薯塊，鹹香誘人，是補充活力的最佳選擇。",
+        "ingredients": "吐司、培根、酪梨醬（酪梨、檸檬汁、橄欖油）、番茄、生菜、黃瓜、黑胡椒、香煎馬鈴薯塊（馬鈴薯、橄欖油、海鹽）",
+        "is_featured": false,
+        "is_new": false,
+        "created_at": "2025-05-10T07:02:45.551Z",
+        "updated_at": "2025-05-28T02:41:37.662Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 16,
+    "fields": {
+        "name": "培根生菜番茄三明治",
+        "price": "18.00",
+        "category": 6,
+        "image": "products/1725205651167food_14.png",
+        "description": "這款酥脆培根生菜番茄三明治，採用低碳全麥吐司，夾入新鮮爽脆的生菜、多汁番茄與香氣四溢的培根，搭配濃郁滑順的美乃滋，每一口都清爽又滿足，是健康與美味兼具的絕佳選擇。",
+        "ingredients": "低碳吐司、培根、生菜、番茄、美乃滋",
+        "is_featured": true,
+        "is_new": true,
+        "created_at": "2025-05-10T07:03:07.756Z",
+        "updated_at": "2025-05-28T02:34:20.845Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 17,
+    "fields": {
+        "name": "田園蔬菜鷹嘴豆沙拉三明治",
+        "price": "16.00",
+        "category": 6,
+        "image": "products/1725205670812food_15.png",
+        "description": "選用多穀雜糧麵包，夾入自製鷹嘴豆沙拉與新鮮蔬菜，營養滿分、口感豐富。鷹嘴豆混合洋蔥、甜椒、香料調和成濃郁餡料，再搭配清脆小黃瓜與生菜，清新中帶有綿密層次，是健康飲食愛好者的絕佳選擇！",
+        "ingredients": "多穀吐司、鷹嘴豆沙拉（鷹嘴豆、紅洋蔥、甜椒、美乃滋或橄欖油、檸檬汁）、小黃瓜、生菜、黑胡椒、鹽",
+        "is_featured": false,
+        "is_new": false,
+        "created_at": "2025-05-10T07:03:29.018Z",
+        "updated_at": "2025-05-28T02:39:51.424Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 18,
+    "fields": {
+        "name": "越南經典法棍三明治（Bánh Mì）",
+        "price": "24.00",
+        "category": 6,
+        "image": "products/1725205694201food_16.png",
+        "description": "選用外酥內軟的法國麵包，夾入特製醃蘿蔔紅蘿蔔絲、新鮮香菜、黃瓜與酥炸蛋皮，搭配風味濃郁的火腿與醬料，酸甜鹹香交織，每一口都充滿異國魅力，是不可錯過的招牌輕食！",
+        "ingredients": "法棍麵包、越式火腿或燻肉、炸蛋皮、醃蘿蔔與紅蘿蔔、香菜、黃瓜、辣椒、越式醬料（如美乃滋與醬油混合）、黑胡椒",
+        "is_featured": false,
+        "is_new": false,
+        "created_at": "2025-05-10T07:03:51.186Z",
+        "updated_at": "2025-05-28T02:38:56.259Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 19,
+    "fields": {
+        "name": "櫻桃雲霜杯子蛋糕",
+        "price": "14.00",
+        "category": 1,
+        "image": "products/1725205713327food_17.png",
+        "description": "金黃鬆軟的蛋糕體，搭配粉嫩綿密的香草奶霜，頂部點綴一顆鮮紅櫻桃與繽紛糖珠，甜美又討喜。不論派對、生日還是午後的療癒甜點時光，都是最吸睛的甜蜜主角！",
+        "ingredients": "蛋糕體（雞蛋、低筋麵粉、糖、奶油、牛奶、香草精）、糖霜（奶油、糖粉、香草、食用色素）、櫻桃、彩色糖珠",
+        "is_featured": false,
+        "is_new": false,
+        "created_at": "2025-05-10T07:04:05.334Z",
+        "updated_at": "2025-05-28T03:38:23.192Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 20,
+    "fields": {
+        "name": "雙層草莓果凍乳酪蛋糕",
+        "price": "12.00",
+        "category": 1,
+        "image": "products/1725205729271food_18.png",
+        "description": "層次分明、甜而不膩。下層是綿密滑順的原味乳酪，中層以清爽草莓果凍覆蓋，最上層則鋪滿新鮮草莓與薄荷葉，酸甜清新，口感濃郁又不失輕盈感。",
+        "ingredients": "奶油乳酪、鮮奶油、糖、草莓果泥、草莓果凍（吉利丁、果汁、糖）、消化餅乾底（餅乾、奶油）、新鮮草莓、薄荷葉、檸檬汁、香草精",
+        "is_featured": false,
+        "is_new": false,
+        "created_at": "2025-05-10T07:04:39.000Z",
+        "updated_at": "2025-05-28T03:39:19.988Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 21,
+    "fields": {
+        "name": "莓果雲朵鮮奶油蛋糕",
+        "price": "15.00",
+        "category": 1,
+        "image": "products/1725205750726food_19.png",
+        "description": "這款蛋糕宛如雲朵般輕柔細緻，外層裹上滑順鮮奶油，頂部鋪上當季藍莓與黑莓，酸甜平衡、口感清爽。內部海綿蛋糕體濕潤綿密，完美結合天然奶香與果香。",
+        "ingredients": "蛋糕體（雞蛋、低筋麵粉、糖、牛奶、奶油）、鮮奶油、藍莓、黑莓、香草精、檸檬汁、糖粉（裝飾用）",
+        "is_featured": true,
+        "is_new": false,
+        "created_at": "2025-05-10T07:05:02.686Z",
+        "updated_at": "2025-05-28T03:36:58.656Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 22,
+    "fields": {
+        "name": "芒果慕斯乳酪蛋糕",
+        "price": "15.00",
+        "category": 1,
+        "image": "products/1725205764851food_20.png",
+        "description": "以綿密輕盈的乳酪慕斯為基底，覆蓋一層香甜芒果果凍，口感滑順細緻。底層餅乾塔酥脆不膩，整體層次分明，入口即化。點綴上食用花瓣，是夏日午後最療癒的甜點選擇！",
+        "ingredients": "奶油乳酪、鮮奶油、糖、吉利丁、芒果泥、芒果果凍層、餅乾底（消化餅乾、奶油）、香草精、檸檬汁、食用花（裝飾）",
+        "is_featured": false,
+        "is_new": false,
+        "created_at": "2025-05-10T07:05:22.000Z",
+        "updated_at": "2025-05-28T03:34:55.713Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 23,
+    "fields": {
+        "name": "地中海風烤茄子藜麥碗",
+        "price": "14.00",
+        "category": 9,
+        "image": "products/1725205785965food_21.png",
+        "description": "將茄子對切烘烤後填入香料炒香的藜麥與核桃碎，淋上清爽酸奶醬並佐以新鮮番茄洋蔥沙拉，清爽又富有層次。每一口都能品嚐到地中海香料與天然食材的完美結合。",
+        "ingredients": "茄子、藜麥、核桃碎、優格醬（希臘優格、檸檬汁、大蒜）、番茄、紅洋蔥、橄欖油、香菜、鹽、黑胡椒、孜然粉（可選）",
+        "is_featured": false,
+        "is_new": false,
+        "created_at": "2025-05-10T07:06:35.770Z",
+        "updated_at": "2025-05-28T03:33:04.305Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 24,
+    "fields": {
+        "name": "香烤花椰菜鷹嘴豆石榴沙拉",
+        "price": "22.00",
+        "category": 9,
+        "image": "products/1725205803701food_22.png",
+        "description": "結合香烤花椰菜與鷹嘴豆的濃郁香氣，佐上新鮮石榴籽的微甜果香與堅果碎的酥脆口感，並搭配新鮮香草點綴，營養豐富又清爽無負擔，是完美的植物系餐點選擇。",
+        "ingredients": "花椰菜、鷹嘴豆、石榴籽、香菜或巴西里、杏仁片或堅果碎、橄欖油、檸檬汁、鹽、黑胡椒、孜然粉（可選）",
+        "is_featured": false,
+        "is_new": false,
+        "created_at": "2025-05-10T07:07:15.989Z",
+        "updated_at": "2025-05-28T03:25:41.372Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 25,
+    "fields": {
+        "name": "經典凱薩沙拉佐帕瑪森起司",
+        "price": "10.00",
+        "category": 9,
+        "image": "products/1725205823027food_23.png",
+        "description": "使用新鮮脆口的羅馬萵苣，搭配香烤麵包丁、濃郁凱薩醬與帕瑪森起司絲，再佐以多汁小番茄點綴，色彩豐富、口感多層次。無論單吃或搭配主餐都令人愛不釋手。",
+        "ingredients": "羅馬萵苣、小番茄、帕瑪森起司、法式麵包丁、凱薩醬（蛋黃、蒜末、檸檬汁、橄欖油、起司、鯷魚醬）、黑胡椒、鹽",
+        "is_featured": false,
+        "is_new": false,
+        "created_at": "2025-05-10T07:08:15.459Z",
+        "updated_at": "2025-05-28T03:33:55.068Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 26,
+    "fields": {
+        "name": "清炒蔬菜糙米佐溏心蛋",
+        "price": "12.00",
+        "category": 9,
+        "image": "products/1725205842909food_24.png",
+        "description": "使用富含纖維的糙米，搭配快炒節瓜、高麗菜、青蔥與洋蔥，清爽不油膩，最後搭配半熟溏心蛋與新鮮香草點綴，營養均衡、滿足感十足。",
+        "ingredients": "糙米、節瓜（櫛瓜）、高麗菜、洋蔥、青蔥、橄欖油、溏心蛋（雞蛋、水煮調控時間）、新鮮巴西里或香菜、鹽、黑胡椒",
+        "is_featured": false,
+        "is_new": false,
+        "created_at": "2025-05-10T07:08:39.901Z",
+        "updated_at": "2025-05-28T03:24:31.450Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 27,
+    "fields": {
+        "name": "焗烤火腿奶油筆管麵",
+        "price": "12.00",
+        "category": 8,
+        "image": "products/1725205865462food_25.png",
+        "description": "香濃奶香與酥脆焗皮完美交織！這道焗烤筆管麵使用奶油白醬拌炒火腿條與義大利麵，撒上雙層起司後焗烤至金黃酥脆，濃郁滑順、香氣撲鼻，是大人小孩都愛的經典人氣料理！",
+        "ingredients": "筆管麵、火腿條、奶油、鮮奶油、帕瑪森起司、莫札瑞拉起司、蒜末、鹽、黑胡椒",
+        "is_featured": false,
+        "is_new": false,
+        "created_at": "2025-05-10T07:09:05.315Z",
+        "updated_at": "2025-05-28T03:21:44.357Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 28,
+    "fields": {
+        "name": "義式番茄羅勒螺旋麵",
+        "price": "18.00",
+        "category": 8,
+        "image": "products/1725205884500food_26.png",
+        "description": "以香濃番茄醬為基底，拌入新鮮小番茄與洋蔥，最後加入新鮮羅勒點綴提香，口感酸甜清爽、層次分明。是追求輕盈風味與純正義式風格的好選擇!",
+        "ingredients": "螺旋麵、番茄醬、小番茄、紅洋蔥、大蒜、橄欖油、新鮮羅勒、鹽、黑胡椒、（可選：辣椒片）",
+        "is_featured": false,
+        "is_new": false,
+        "created_at": "2025-05-10T07:09:28.156Z",
+        "updated_at": "2025-05-28T03:03:45.605Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 29,
+    "fields": {
+        "name": "奶油雞肉白醬寬扁麵",
+        "price": "16.00",
+        "category": 8,
+        "image": "products/1725205902395food_27.png",
+        "description": "以濃郁香滑的白醬為靈魂，搭配鮮嫩煎雞胸肉與手工寬扁麵，佐以帕瑪森起司提香，滑順不膩、口感豐富。每一口都散發著奶油與大蒜的完美平衡。",
+        "ingredients": "寬扁麵、雞胸肉、奶油、鮮奶油、大蒜、洋菇、帕瑪森起司、橄欖油、鹽、黑胡椒、香草葉（裝飾用）",
+        "is_featured": false,
+        "is_new": false,
+        "created_at": "2025-05-10T07:09:45.846Z",
+        "updated_at": "2025-05-28T03:02:46.266Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 30,
+    "fields": {
+        "name": "奶油太陽乾番茄雞肉義大利麵",
+        "price": "24.00",
+        "category": 8,
+        "image": "products/1725205920759food_28.png",
+        "description": "融合濃郁奶油白醬與香氣四溢的太陽乾番茄，搭配鮮嫩雞肉塊與菠菜拌炒，醬香緊緊包覆每一條麵體，撒上帕瑪森起司提味，滑順中帶有酸甜層次。",
+        "ingredients": "義大利麵、雞胸肉、鮮奶油、奶油、太陽乾番茄、菠菜、蒜末、帕瑪森起司、鹽、黑胡椒",
+        "is_featured": false,
+        "is_new": false,
+        "created_at": "2025-05-10T07:10:12.791Z",
+        "updated_at": "2025-05-28T03:23:12.584Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 31,
+    "fields": {
+        "name": "帕瑪森菠菜奶油培根義大利麵",
+        "price": "14.00",
+        "category": 4,
+        "image": "products/1725205936296food_29.png",
+        "description": "以奶油帕瑪森白醬為基底，拌入香煎培根、嫩菠菜與爽口櫛瓜，最後再點綴一球濃郁瑞可達起司，滑順濃厚、鹹香誘人。無論單點或搭配紅酒皆是完美選擇。",
+        "ingredients": "義大利麵（直麵或扁麵）、培根、奶油、帕瑪森起司、瑞可達起司、菠菜、櫛瓜、洋蔥、蒜末、橄欖油、黑胡椒、海鹽",
+        "is_featured": false,
+        "is_new": true,
+        "created_at": "2025-05-10T07:11:12.745Z",
+        "updated_at": "2025-06-01T15:15:22.442Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 32,
+    "fields": {
+        "name": "經典義式番茄義大利麵",
+        "price": "12.00",
+        "category": 4,
+        "image": "products/1725205950050food_30.png",
+        "description": "使用義大利進口麵條，搭配每日現煮的番茄紅醬，炒香蒜末與橄欖油，簡單調味卻風味十足。每一口都是濃濃的家鄉味與陽光番茄香。",
+        "ingredients": "義大利麵、番茄醬（新鮮番茄、橄欖油、蒜末）、洋蔥、羅勒葉、鹽、黑胡椒、糖（少量）",
+        "is_featured": false,
+        "is_new": false,
+        "created_at": "2025-05-10T07:11:34.426Z",
+        "updated_at": "2025-05-28T03:00:59.285Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 33,
+    "fields": {
+        "name": "地中海海鮮番茄義大利麵",
+        "price": "20.00",
+        "category": 4,
+        "image": "products/1725205970667food_31.png",
+        "description": "結合新鮮蝦仁、花枝與貝類，搭配香甜番茄與橄欖油快炒，帶出濃郁鮮香。加入新鮮羅勒與辣椒提味，清爽不膩，口感層層堆疊，是海鮮控絕對不能錯過的一道主廚推薦！",
+        "ingredients": "義大利麵、蝦仁、花枝、淡菜（或其他時令海鮮）、小番茄、蒜末、橄欖油、辣椒片、羅勒、海鹽、黑胡椒、白酒（可選）",
+        "is_featured": false,
+        "is_new": false,
+        "created_at": "2025-05-10T07:11:52.907Z",
+        "updated_at": "2025-05-28T02:58:30.805Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 34,
+    "fields": {
+        "name": "越南家常牛肉河粉",
+        "price": "15.00",
+        "category": 4,
+        "image": "products/1725205991270food_32.png",
+        "description": "以慢熬高湯為靈魂，融合洋蔥、八角與香料的自然香氣，搭配滑順米粉、新鮮牛肉塊與豐富蔬菜。上桌前撒上香菜、薄荷與辣椒，搭配一旁的新鮮生菜盤，自由依口味增添，口感清爽又飽足。",
+        "ingredients": "米粉、牛肉（燉煮塊或薄片）、洋蔥、紅蘿蔔、香菜、薄荷葉、紅辣椒、青蔥、牛骨高湯（含八角、桂皮、丁香、薑）、魚露、鹽",
+        "is_featured": false,
+        "is_new": false,
+        "created_at": "2025-05-10T07:12:09.221Z",
+        "updated_at": "2025-05-28T02:57:22.875Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 35,
+    "fields": {
+        "name": "經典拉花拿鐵",
+        "price": "8.00",
+        "category": 2,
+        "image": "products/62D7361A-013B-49DF-8D57-F58A93E52785_zpnO1S9.jpg",
+        "description": "香濃義式濃縮結合綿密蒸奶，融合成一杯柔和順口的拿鐵。精緻拉花更為這杯咖啡增添美感，不僅暖胃更暖心。適合早晨喚醒一天，也適合午後靜靜陪伴，是我們人氣不墜的經典選擇！",
+        "ingredients": "義式濃縮咖啡（Espresso）、蒸氣牛奶、細緻奶泡",
+        "is_featured": false,
+        "is_new": false,
+        "created_at": "2025-05-10T13:29:50.623Z",
+        "updated_at": "2025-05-28T03:46:38.205Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 36,
+    "fields": {
+        "name": "經典熱紅茶",
+        "price": "6.00",
+        "category": 2,
+        "image": "products/652C8C82-B4FE-47D1-AC09-0DE15506B42F.jpg",
+        "description": "選用上等茶葉沖泡，茶湯清透琥珀、香氣馥郁，入口溫潤回甘。無論單喝或搭配蜂蜜、檸檬、牛奶都別具風味，是放慢腳步、靜享片刻的理想選擇。",
+        "ingredients": "熱水、紅茶葉（如阿薩姆、大吉嶺或錫蘭）",
+        "is_featured": false,
+        "is_new": false,
+        "created_at": "2025-05-10T13:30:41.758Z",
+        "updated_at": "2025-05-28T03:45:54.757Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 37,
+    "fields": {
+        "name": "經典檸香琴通寧",
+        "price": "10.00",
+        "category": 2,
+        "image": "products/C7590491-55FB-41AF-9AAE-B30EFA319C46_m8UQcVg.jpeg",
+        "description": "選用優質琴酒搭配清爽通寧水，加入檸檬皮絲與黑胡椒粒點綴，增添層次香氣。氣泡沁涼、酒香淡雅，是最受歡迎的夏夜開場飲品之一。",
+        "ingredients": "琴酒（Gin）、通寧水（Tonic Water）、冰塊、檸檬皮／檸檬片、黑胡椒粒（可選）",
+        "is_featured": false,
+        "is_new": false,
+        "created_at": "2025-05-10T13:31:19.140Z",
+        "updated_at": "2025-05-28T03:44:46.502Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 40,
+    "fields": {
+        "name": "夏日柑橘莓果氣泡飲",
+        "price": "8.00",
+        "category": 2,
+        "image": "products/5A4F1568-09B4-4357-965B-5B56B4FFEC25_k7E5ZC6.jpeg",
+        "description": "以天然莓果與柑橘果汁調製，加入氣泡水後清爽酸甜，並以檸檬片與繽紛吸管裝飾，口感清新、視覺吸睛，是午後解暑、聚會乾杯的完美選擇！",
+        "ingredients": "氣泡水、柳橙汁／檸檬汁、草莓或覆盆子果醬（或果泥）、冰塊、檸檬片、糖漿（依口味可調整）",
+        "is_featured": false,
+        "is_new": true,
+        "created_at": "2025-05-10T13:33:31.109Z",
+        "updated_at": "2025-06-01T15:15:35.211Z"
+    }
+},
+{
+    "model": "cart.cart",
+    "pk": 5,
+    "fields": {
+        "user": 1,
+        "created_at": "2025-06-03T10:20:25.617Z",
+        "updated_at": "2025-06-03T10:20:25.617Z"
+    }
+},
+{
+    "model": "loyalty.profile",
+    "pk": 1,
+    "fields": {
+        "user": 1,
+        "points": 4
+    }
+}
+]

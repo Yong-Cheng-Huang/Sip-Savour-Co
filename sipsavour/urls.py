@@ -39,7 +39,7 @@ urlpatterns = [
     path("orders/", include("orders.urls")),
     path('loyalty/', include('loyalty.urls')),
     path("fortune/", include("fortune.urls")),
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 # 處理媒體檔案
 if settings.DEBUG:

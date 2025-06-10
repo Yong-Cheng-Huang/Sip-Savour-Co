@@ -1,7 +1,7 @@
 # ☕ Sip & Savour Co.
 
 ## 專案簡介
-歡迎來到《**Sip & Savour Co.**》，這是一個以 **Django 框架**為核心開發的模擬餐飲品牌電商網站。  
+歡迎來到《**Sip & Savour Co**》，這是一個以 **Django 框架**為核心開發的模擬餐飲品牌電商網站。  
 作為「**動態網頁設計與製作**」課程的期末專案，本網站涵蓋從前端使用者介面到後端資料管理的完整流程。  
 在這裡，使用者不僅能瀏覽商品，還可以體驗完整的購物、會員集點等互動功能。
 
@@ -33,19 +33,38 @@
 
 ---
 
-## 🚀 專案存取與執行
+## 🚀 安裝與執行
 
 ### 1. 取得專案原始碼
-本專案透過 GitHub 進行版本控制與協作。  
-🔗 GitHub Repository: [https://github.com/Yong-Cheng-Huang/Sip-Savour-Co](https://github.com/Yong-Cheng-Huang/Sip-Savour-Co)
-
-### 2. 執行專案
-由於本專案以 Django 建置，請參照標準 Django 專案的執行方式：
 
 ```bash
 git clone https://github.com/Yong-Cheng-Huang/Sip-Savour-Co.git
+```
+
+### 2. 進入專案資料夾
+
+```
 cd Sip-Savour-Co
+```
+
+### 3. 安裝相依套件
+
+```
 pip install -r requirements.txt
+```
+
+### 4. 資料庫遷移
+
+```
 python manage.py migrate
+```
+
+### 5. 啟動專案
+
+```
 python manage.py runserver
 ```
+
+
+## 📽️ 介紹影片  
+🎬 [點我觀看網站Demo](https://youtu.be/AwWW5R5jERE?si=YORFJMeX4myMI8sI)

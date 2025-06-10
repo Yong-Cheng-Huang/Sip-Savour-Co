@@ -4,6 +4,11 @@
 *.pyc
 __pycache__
 
+# SQLite database files
+*.sqlite3
+*.db
+*.sqlite
+
 # media
 
 # Backup files # 
@@ -137,4 +142,5 @@ GitHub.sublime-settings
 !.vscode/extensions.json 
 .history
 
-/staticfiles/
+staticfiles/
+

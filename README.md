@@ -47,7 +47,7 @@ git clone https://github.com/Yong-Cheng-Huang/Sip-Savour-Co.git
 cd Sip-Savour-Co
 ```
 
-### 3. 安裝相依套件
+### 3. 安裝套件
 
 ```
 pip install -r requirements.txt

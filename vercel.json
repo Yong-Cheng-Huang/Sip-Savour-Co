@@ -1,25 +1,25 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "sipsavour/wsgi.py",
-        "use": "@vercel/python",
-        "config": { "maxLambdaSize": "15mb" }
-      }
-    ],
-    "routes": [
-      {
-        "src": "/static/(.*)",
-        "dest": "/staticfiles/$1"
-      },
-      {
-        "src": "/media/(.*)",
-        "dest": "/media/$1"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "sipsavour/wsgi.py"
-      }
-    ],
-    "buildCommand": "python manage.py collectstatic --noinput"
-  }
+  "version": 2,
+  "builds": [
+    {
+      "src": "sipsavour/wsgi.py",
+      "use": "@vercel/python",
+      "config": { "maxLambdaSize": "15mb" }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/static/(.*)",
+      "dest": "/staticfiles/$1"
+    },
+    {
+      "src": "/media/(.*)",
+      "dest": "/media/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "sipsavour/wsgi.py"
+    }
+  ],
+  "buildCommand": "pip install -r requirements.txt && python manage.py migrate && python manage.py collectstatic --noinput"
+}
